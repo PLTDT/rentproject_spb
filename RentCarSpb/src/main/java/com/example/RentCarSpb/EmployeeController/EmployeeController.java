@@ -22,7 +22,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @PostMapping(path = "/save")
+    @PostMapping(path = "/registeraction")
     public String saveEmployee(@RequestBody EmployeeDTO employeeDTO) {
 
     String id = employeeService.addEmployee(employeeDTO);
@@ -30,7 +30,7 @@ public class EmployeeController {
 
     }
 
-    @PostMapping(path = "/login")
+    @PostMapping(path = "/loginaction")
     public ResponseEntity<?> loginEmployee(@RequestBody LoginDTO loginDTO) {
         LoginResponse loginResponse = employeeService.loginEmployee(loginDTO);
         return ResponseEntity.ok(loginResponse);
