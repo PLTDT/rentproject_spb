@@ -12,69 +12,74 @@ import com.example.RentCarSpb.Dto.EmployeeDTO;
 import com.example.RentCarSpb.Dto.LoginDTO;
 import com.example.RentCarSpb.Entity.Employee;
 import com.example.RentCarSpb.Repo.EmployeeRepo;
+import com.example.RentCarSpb.util.JwtTokenUtil;
 
-// 標註這個類為 Spring 的服務組件
 @Service
 public class EmployeeIMPL implements EmployeeService { 
     
-    // 注入 EmployeeRepo，用於與數據庫進行交互
     @Autowired
-    private EmployeeRepo employeeRepo;
+    private EmployeeRepo employeeRepo; // 注入 EmployeeRepo 用於操作員工數據庫
 
-    // 注入 PasswordEncoder，用於密碼加密和驗證
     @Autowired
-    private PasswordEncoder passwordEncode;
+    private PasswordEncoder passwordEncode; // 注入 PasswordEncoder 用於加密和比對密碼
 
-    // 實現添加員工的方法
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil; // 注入 JwtTokenUtil 用於生成和驗證 JWT token
+
     @Override
     public String addEmployee(EmployeeDTO employeeDTO) {
-
-        // 創建 Employee 實體，將密碼進行加密處理
+        // 根據 EmployeeDTO 創建 Employee 實體，並加密密碼
         Employee employee = new Employee(
                 employeeDTO.getEmployeeid(),
                 employeeDTO.getEmployeename(),
                 employeeDTO.getEmail(),
                 this.passwordEncode.encode(employeeDTO.getPassword())
         );
-
-        // 保存員工實體到數據庫
+        // 保存員工到數據庫
         employeeRepo.save(employee);
-
-        // 返回員工姓名
+        // 返回員工名稱
         return employee.getEmployeename();
     }
 
-    // 實現登錄員工的方法
     @Override
-public LoginResponse loginEmployee(LoginDTO loginDTO) {
-    Employee employee1 = employeeRepo.findByEmail(loginDTO.getEmail());
-    
-    if (employee1 != null) {
-        String password = loginDTO.getPassword();
-        String encodedPassword = employee1.getPassword();
-        Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
+    public LoginResponse loginEmployee(LoginDTO loginDTO) {
+        // 根據電子郵件查找員工
+        Employee employee1 = employeeRepo.findByEmail(loginDTO.getEmail());
         
-        if (isPwdRight) {
-            Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
+        if (employee1 != null) {
+            // 比對提供的密碼和存儲的加密密碼
+            String password = loginDTO.getPassword();
+            String encodedPassword = employee1.getPassword();
+            Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
             
-            if (employee.isPresent()) {
-                EmployeeDTO employeeDTO = new EmployeeDTO(
-                    employee1.getEmployeeid(),
-                    employee1.getEmployeename(),
-                    employee1.getEmail(),
-                    null // 不返回密碼
-                );
-                return new LoginResponse("Login Success", true, employeeDTO);
+            if (isPwdRight) {
+                // 密碼匹配，進一步查找是否存在該員工
+                Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
+                
+                if (employee.isPresent()) {
+                    // 登入成功，生成 JWT token
+                    String token = jwtTokenUtil.generateToken(employee1);
+
+                    // 創建 EmployeeDTO 並返回帶有 token 的 LoginResponse
+                    EmployeeDTO employeeDTO = new EmployeeDTO(
+                        employee1.getEmployeeid(),
+                        employee1.getEmployeename(),
+                        employee1.getEmail(),
+                        null // 不返回密碼
+                    );
+                    return new LoginResponse("Login Success", true, employeeDTO, token);
+                } else {
+                    // 找不到該員工，登入失敗
+                    return new LoginResponse("Login Failed", false);
+                }
             } else {
-                return new LoginResponse("Login Failed", false);
+                // 密碼不匹配
+                return new LoginResponse("Login Not Match", false);
             }
         } else {
-            return new LoginResponse("Login Not Match", false);
+            // 找不到該電子郵件的員工
+            return new LoginResponse("Email not exists", false);
         }
-    } else {
-        return new LoginResponse("Email not exists", false);
     }
-}
-
 }
 
