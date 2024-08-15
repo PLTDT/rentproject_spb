@@ -1,15 +1,19 @@
 package com.example.RentCarSpb.response;
 
-import com.example.RentCarSpb.Dto.EmployeeDTO;
+import com.example.RentCarSpb.Dto.EmployeeResponseWebDTO;
 
+/**
+ * 定義登入回應的 DTO 類，用來封裝登入結果的資訊。
+ */
 public class LoginResponse {
+
     private String message; // 登入結果的消息
     private Boolean status; // 登入結果的狀態，成功為 true，失敗為 false
-    private EmployeeDTO user; // 登入的使用者資訊
+    private EmployeeResponseWebDTO user; // 登入的使用者資訊
     private String token; // JWT token，用於後續的身份驗證
 
     // 帶參數的構造函數，用於初始化 LoginResponse 物件，包含消息、狀態、使用者資訊和 token
-    public LoginResponse(String message, Boolean status, EmployeeDTO user, String token) {
+    public LoginResponse(String message, Boolean status, EmployeeResponseWebDTO user, String token) {
         this.message = message;
         this.status = status;
         this.user = user;
@@ -17,7 +21,7 @@ public class LoginResponse {
     }
 
     // 帶參數的構造函數，用於初始化 LoginResponse 物件，包含消息、狀態和使用者資訊
-    public LoginResponse(String message, Boolean status, EmployeeDTO user) {
+    public LoginResponse(String message, Boolean status, EmployeeResponseWebDTO user) {
         this.message = message;
         this.status = status;
         this.user = user;
@@ -54,12 +58,12 @@ public class LoginResponse {
     }
 
     // 獲取使用者資訊
-    public EmployeeDTO getUser() {
+    public EmployeeResponseWebDTO getUser() {
         return user;
     }
 
     // 設置使用者資訊
-    public void setUser(EmployeeDTO user) {
+    public void setUser(EmployeeResponseWebDTO user) {
         this.user = user;
     }
 

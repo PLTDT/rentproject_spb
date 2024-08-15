@@ -1,14 +1,13 @@
 package com.example.RentCarSpb.Service.impl;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.example.RentCarSpb.Dto.EmployeeDTO;
 import com.example.RentCarSpb.Service.EmployeeService;
 import com.example.RentCarSpb.response.LoginResponse;
-import com.example.RentCarSpb.Dto.EmployeeDTO;
+import com.example.RentCarSpb.Dto.EmployeeResponseWebDTO;
 import com.example.RentCarSpb.Dto.LoginDTO;
 import com.example.RentCarSpb.Entity.Employee;
 import com.example.RentCarSpb.Repo.EmployeeRepo;
@@ -53,25 +52,16 @@ public class EmployeeIMPL implements EmployeeService {
             Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
             
             if (isPwdRight) {
-                // 密碼匹配，進一步查找是否存在該員工
-                Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
-                
-                if (employee.isPresent()) {
-                    // 登入成功，生成 JWT token
-                    String token = jwtTokenUtil.generateToken(employee1);
+                // 密碼匹配，生成 JWT token
+                String token = jwtTokenUtil.generateToken(employee1);
 
-                    // 創建 EmployeeDTO 並返回帶有 token 的 LoginResponse
-                    EmployeeDTO employeeDTO = new EmployeeDTO(
-                        employee1.getEmployeeid(),
-                        employee1.getEmployeename(),
-                        employee1.getEmail(),
-                        null // 不返回密碼
-                    );
-                    return new LoginResponse("Login Success", true, employeeDTO, token);
-                } else {
-                    // 找不到該員工，登入失敗
-                    return new LoginResponse("Login Failed", false);
-                }
+                // 創建 EmployeeResponseWebDTO 並返回帶有 token 的 LoginResponse
+                EmployeeResponseWebDTO responseDTO = new EmployeeResponseWebDTO(
+                    employee1.getEmployeeid(),
+                    employee1.getEmployeename(),
+                    employee1.getEmail()
+                );
+                return new LoginResponse("Login Success", true, responseDTO, token);
             } else {
                 // 密碼不匹配
                 return new LoginResponse("Login Not Match", false);
@@ -82,4 +72,3 @@ public class EmployeeIMPL implements EmployeeService {
         }
     }
 }
-
