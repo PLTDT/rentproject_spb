@@ -12,5 +12,7 @@ public interface EmployeeService {
 
     // 定義一個方法來處理員工登錄，接收 LoginDTO 物件並返回 LoginResponse 物件
     LoginResponse loginEmployee(LoginDTO loginDTO);
-}
 
+    // 定義一個方法來檢查電子郵件是否存在，接收電子郵件作為參數並返回布林值
+    boolean checkEmailExists(String email);
+}
