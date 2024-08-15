@@ -46,36 +46,35 @@ public class EmployeeIMPL implements EmployeeService {
 
     // 實現登錄員工的方法
     @Override
-    public LoginResponse loginEmployee(LoginDTO loginDTO) {
-        String msg = "";
-        // 根據電子郵件查找員工
-        Employee employee1 = employeeRepo.findByEmail(loginDTO.getEmail());
+public LoginResponse loginEmployee(LoginDTO loginDTO) {
+    Employee employee1 = employeeRepo.findByEmail(loginDTO.getEmail());
+    
+    if (employee1 != null) {
+        String password = loginDTO.getPassword();
+        String encodedPassword = employee1.getPassword();
+        Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
         
-        if (employee1 != null) {
-            // 比對密碼是否匹配
-            String password = loginDTO.getPassword();
-            String encodedPassword = employee1.getPassword();
-            Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
+        if (isPwdRight) {
+            Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
             
-            if (isPwdRight) {
-                // 如果密碼匹配，根據電子郵件和密碼查找員工
-                Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
-                
-                if (employee.isPresent()) {
-                    // 返回登錄成功的響應
-                    return new LoginResponse("Login Success", true);
-                } else {
-                    // 如果找不到匹配的員工，返回登錄失敗的響應
-                    return new LoginResponse("Login Failed", false);
-                }
+            if (employee.isPresent()) {
+                EmployeeDTO employeeDTO = new EmployeeDTO(
+                    employee1.getEmployeeid(),
+                    employee1.getEmployeename(),
+                    employee1.getEmail(),
+                    null // 不返回密碼
+                );
+                return new LoginResponse("Login Success", true, employeeDTO);
             } else {
-                // 密碼不匹配，返回登錄不匹配的響應
-                return new LoginResponse("Login Not Match", false);
+                return new LoginResponse("Login Failed", false);
             }
         } else {
-            // 如果電子郵件找不到對應的員工，返回電子郵件不存在的響應
-            return new LoginResponse("Email not exits", false);
+            return new LoginResponse("Login Not Match", false);
         }
+    } else {
+        return new LoginResponse("Email not exists", false);
     }
+}
+
 }
 
