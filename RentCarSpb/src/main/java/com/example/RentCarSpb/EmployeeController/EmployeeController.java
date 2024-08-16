@@ -1,12 +1,15 @@
 package com.example.RentCarSpb.EmployeeController;
 
+import java.util.Collections;
 // 引入必要的 Spring 和應用程序類
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +18,9 @@ import com.example.RentCarSpb.Dto.EmployeeDTO;
 import com.example.RentCarSpb.Dto.LoginDTO;
 import com.example.RentCarSpb.Service.EmployeeService;
 import com.example.RentCarSpb.response.LoginResponse;
+import com.example.RentCarSpb.util.JwtTokenUtil;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,4 +59,42 @@ public class EmployeeController {
         response.put("exists", exists);
         return ResponseEntity.ok(response); // 返回檢查結果
     }
+
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil; // 正確注入 JwtTokenUtil
+    
+    @GetMapping(path = "/validateToken")
+    public ResponseEntity<String> validateToken(HttpServletRequest request) {
+        String authHeader = request.getHeader("Authorization");
+        if (authHeader != null && authHeader.startsWith("Bearer ")) {
+            String token = authHeader.substring(7);
+            try {
+                boolean isValid = jwtTokenUtil.validateToken(token); // 呼叫更新後的 validateToken 方法
+                if (isValid) {
+                    return ResponseEntity.ok("Token is valid");
+                } else {
+                    return ResponseEntity.status(401).body("Token is invalid or expired");
+                }
+            } catch (Exception e) {
+                return ResponseEntity.status(401).body("Token validation failed: " + e.getMessage());
+            }
+        } else {
+            return ResponseEntity.status(401).body("Authorization header is missing or invalid");
+        }
+    }
+
+    // 範例：在 Spring Boot Controller 中實現重置 Token 的端點
+@PostMapping("/resetToken")
+public ResponseEntity<?> resetToken(HttpServletRequest request) {
+    String token = jwtTokenUtil.getTokenFromRequest(request);
+    if (jwtTokenUtil.validateToken(token)) {
+        String username = jwtTokenUtil.getUsernameFromToken(token);
+        String newToken = jwtTokenUtil.generateToken(username);
+        return ResponseEntity.ok(Collections.singletonMap("token", newToken));
+    } else {
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid Token");
+    }
+}
+
+
 }
