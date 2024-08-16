@@ -11,7 +11,7 @@ import com.example.RentCarSpb.Dto.RentFormDTO;
 import com.example.RentCarSpb.Service.RentFormService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000",allowCredentials = "true")
+@CrossOrigin
 @RequestMapping("api/v1/rentform")
 public class RentFormController {
     
