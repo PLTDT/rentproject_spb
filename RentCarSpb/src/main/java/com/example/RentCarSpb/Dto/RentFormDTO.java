@@ -4,7 +4,9 @@ import java.sql.Date;
 
 public class RentFormDTO {
     
-    private int formid;
+    private String formid;
+
+    
 
     private String rentplace;
 
@@ -22,7 +24,7 @@ public class RentFormDTO {
 
     private String couponcode;
 
-    public RentFormDTO(int formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode) {
+    public RentFormDTO(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode) {
         this.formid = formid;
         this.rentplace = rentplace;
         this.returnplace = returnplace;
@@ -37,11 +39,11 @@ public class RentFormDTO {
     public RentFormDTO() {
     }
 
-    public int getFormid() {
+    public String getFormid() {
         return formid;
     }
 
-    public void setFormid(int formid) {
+    public void setFormid(String formid) {
         this.formid = formid;
     }
 
