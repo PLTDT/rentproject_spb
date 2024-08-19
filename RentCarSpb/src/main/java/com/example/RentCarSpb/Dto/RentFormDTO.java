@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class RentFormDTO {
     
-    private int formid;
+    private String formid;
 
     private String rentplace;
 
@@ -22,7 +22,11 @@ public class RentFormDTO {
 
     private String couponcode;
 
-    public RentFormDTO(int formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode) {
+    private String customername;
+
+    private String customeremail;
+
+    public RentFormDTO(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode,String customername, String customeremail) {  
         this.formid = formid;
         this.rentplace = rentplace;
         this.returnplace = returnplace;
@@ -32,16 +36,18 @@ public class RentFormDTO {
         this.carbrand = carbrand;
         this.passenger = passenger;
         this.couponcode = couponcode;
+        this.customername = customername;
+        this.customeremail = customeremail;
     }
 
     public RentFormDTO() {
     }
 
-    public int getFormid() {
+    public String getFormid() {
         return formid;
     }
 
-    public void setFormid(int formid) {
+    public void setFormid(String formid) {
         this.formid = formid;
     }
 
@@ -108,12 +114,28 @@ public class RentFormDTO {
     public void setCouponcode(String couponcode) {
         this.couponcode = couponcode;
     }   
+
+    public String getCustomername() {
+        return customername;
+    }   
+
+    public void setCustomername(String customername) {
+        this.customername = customername;
+    }
+
+    public String getCustomeremail() {
+        return customeremail;
+    }
+
+    public void setCustomeremail(String customeremail) {
+        this.customeremail = customeremail;
+    }
     
     @Override
     public String toString() {
         return "RentFormDTO [formid=" + formid + ", rentplace=" + rentplace + ", returnplace=" + returnplace
                 + ", rentdate=" + rentdate + ", returndate=" + returndate + ", carid=" + carid + ", carbrand="
-                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode + "]";
-    }
+                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode +", customername="+ customername + ", customeremail=" + customeremail +  "]";
+    }                 
 
 }

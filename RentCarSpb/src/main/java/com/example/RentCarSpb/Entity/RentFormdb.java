@@ -1,22 +1,23 @@
 package com.example.RentCarSpb.Entity;
 
-
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
+
 
 @Entity
 @Table(name = "rentform")
 public class RentFormdb {
     @Id
-    @Column(name = "form_id",length=45)
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int formid;
+    //@GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "form_id",length=45,nullable = false)
+    private String formid;
 
     @Column(name = "rent_place" ,length=255)
     private String rentplace;
@@ -42,7 +43,13 @@ public class RentFormdb {
     @Column(name = "coupon_code", length=255)
     private String couponcode;
 
-    public RentFormdb(int formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode) {
+    @Column(name = "custumer_name", length=255)
+    private String customername;
+
+    @Column(name = "custumer_email", length=255)
+    private String customeremail;
+
+    public RentFormdb(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode,String customername, String customeremail) {  
         this.formid = formid;
         this.rentplace = rentplace;
         this.returnplace = returnplace;
@@ -52,13 +59,43 @@ public class RentFormdb {
         this.carbrand = carbrand;
         this.passenger = passenger;
         this.couponcode = couponcode;
+        this.customername=customername;
+        this.customeremail=customeremail;
+    }
+    public RentFormdb() {
+
+    }
+    @PrePersist
+    private void generateFormId() {
+    if (this.formid == null || this.formid.isEmpty()) {
+        String datePart = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
+        this.formid = datePart + "-" + java.util.UUID.randomUUID().toString().substring(0,4); 
+    }
+    /*if (this.formid == null || this.formid.isEmpty()) {
+        String datePart = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String lastFormId = findLastFormIdForToday(datePart); // Method to retrieve the last formid from DB
+        int nextId = 1;
+
+        if (lastFormId != null && lastFormId.startsWith(datePart)) {
+            String lastSequencePart = lastFormId.substring(lastFormId.indexOf('-') + 1);
+            nextId = Integer.parseInt(lastSequencePart) + 1;
+        }
+
+        this.formid = datePart + "-" + String.format("%04d", nextId);
+        }*/
     }
 
-    public int getFormid() {
+    /*private String findLastFormIdForToday(String datePart) {
+        // Implement a method that queries the database to find the last formid with the current datePart
+        // Example: SELECT formid FROM your_table WHERE formid LIKE '20230817%' ORDER BY formid DESC LIMIT 1;
+        return null; // Replace with actual retrieval logic
+    }*/
+
+    public String getFormid() {
         return formid;
     }
 
-    public void setFormid(int formid) {
+    public void setFormid(String formid) {
         this.formid = formid;
     }
 
@@ -126,10 +163,29 @@ public class RentFormdb {
         this.couponcode = couponcode;
     }
     
+
+    public String getCustomername() {
+        return customername;
+    }       
+
+    public void setCustomername(String custumername) {
+        this.customername = custumername;
+    }
+
+    public String getCustomeremail() {
+        return customeremail;
+    }
+
+    public void setCustomeremail(String custumeremail) {
+        this.customeremail = custumeremail;
+    }
+
+
     @Override
     public String toString() {
         return "RentFormdb [formid=" + formid + ", rentplace=" + rentplace + ", returnplace=" + returnplace
                 + ", rentdate=" + rentdate + ", returndate=" + returndate + ", carid=" + carid + ", carbrand="
-                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode + "]";
+                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode +", customername=" + customername+ ", customeremail=" + customeremail + "]";
+                
     }
 }
