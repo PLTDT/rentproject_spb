@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
-//建立資料庫欄位
+//建立資料庫欄位用於連接JPA
 @Entity
 @Table(name = "rentform")
 public class RentFormdb {
