@@ -1,6 +1,6 @@
 package com.example.RentCarSpb.Repo;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -13,6 +13,6 @@ import com.example.RentCarSpb.Entity.RentFormdb;
 @Repository
 public interface RentFormRepo extends JpaRepository<RentFormdb, Integer> {
 
-        Optional<RentFormdb> findByCustomeremail(String customeremail); 
+        List<RentFormdb> findByCustomeremail(String customeremail); 
 
 }
