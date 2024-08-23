@@ -10,4 +10,7 @@ public interface RentFormService {
     String addRentForm(RentFormDTO rentFormDTO);
 
     List<RentFormdb> findAll();
+
+    List<RentFormdb> getRentFormByEmail(String customeremail);
+
 }

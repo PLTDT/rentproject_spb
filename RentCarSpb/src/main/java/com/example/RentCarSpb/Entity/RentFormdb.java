@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
-
+//建立資料庫欄位用於連接JPA
 @Entity
 @Table(name = "rentform")
 public class RentFormdb {
@@ -43,10 +43,10 @@ public class RentFormdb {
     @Column(name = "coupon_code", length=255)
     private String couponcode;
 
-    @Column(name = "custumer_name", length=255)
+    @Column(name = "customer_name", length=255)
     private String customername;
 
-    @Column(name = "custumer_email", length=255)
+    @Column(name = "customer_email", length=255)
     private String customeremail;
 
     public RentFormdb(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode,String customername, String customeremail) {  
@@ -188,4 +188,5 @@ public class RentFormdb {
                 + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode +", customername=" + customername+ ", customeremail=" + customeremail + "]";
                 
     }
+
 }

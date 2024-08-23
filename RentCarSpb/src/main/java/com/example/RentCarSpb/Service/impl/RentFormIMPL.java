@@ -41,4 +41,11 @@ public class RentFormIMPL implements RentFormService {
         List<RentFormdb> rentform = rentformRepo.findAll();
         return rentform;
     }
+
+
+    @Override
+    public List<RentFormdb> getRentFormByEmail(String customeremail) {
+        return rentformRepo.findByCustomeremail(customeremail);
+    }
+
 }
