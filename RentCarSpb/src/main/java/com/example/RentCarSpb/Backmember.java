@@ -21,7 +21,7 @@ public class Backmember {
     @RequestMapping(path = "/getallorders2", produces = "application/json") // 將HTTP GET請求映射到/getallorders路徑，並指定返回JSON數據
     public List<Test2> getAllOrders() {
         // 定義SQL查詢語句，選擇test2表中的所有數據
-        String sql = "SELECT * FROM test2";
+        String sql = "SELECT * FROM employee";
         
         // 定義RowMapper，將查詢結果的每一行映射到Test2對象
         RowMapper<Test2> rowMapper = new BeanPropertyRowMapper<>(Test2.class);
