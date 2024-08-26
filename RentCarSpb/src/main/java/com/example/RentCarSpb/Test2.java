@@ -7,7 +7,7 @@ public class Test2 {
     private String password;
 
     // 強制要求傳入參數的構造函數
-    public Test2(int employee_id, String employee_name, String email, String password) {
+    public Test2(int employee_id, String email,String employee_name, String password) {
         this.employee_id = employee_id;
         this.employee_name = employee_name;
         this.email = email;
