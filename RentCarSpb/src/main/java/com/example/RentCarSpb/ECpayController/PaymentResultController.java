@@ -1,17 +1,22 @@
 package com.example.RentCarSpb.ECpayController;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+//import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-@Controller
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/api/v1/pay")
 public class PaymentResultController {
 
-    @GetMapping("/paymentResult")
+/*@GetMapping("/paymentResult")
 @ResponseBody
 public String handleGetRequest(@RequestParam Map<String, String> params) {
     return buildHtmlResponse(params);
@@ -21,9 +26,20 @@ public String handleGetRequest(@RequestParam Map<String, String> params) {
 @ResponseBody
 public String handlePostRequest(@RequestParam Map<String, String> params) {
     return buildHtmlResponse(params);
-}
-
-private String buildHtmlResponse(Map<String, String> params) {
+}*/
+@GetMapping("/paymentResult")
+    @ResponseBody
+    public Map<String, String> handleGetRequest(@RequestParam Map<String, String> params) {
+        // 直接返回 JSON 格式的資料
+        return params;
+    }
+@PostMapping("/paymentResult")
+    @ResponseBody
+    public Map<String, String> handlePostRequest(@RequestParam Map<String, String> params) {
+        // 直接返回 JSON 格式的資料
+        return params;
+    }
+/*private String buildHtmlResponse(Map<String, String> params) {
     StringBuilder result = new StringBuilder("<html><body>");
     result.append("<h3>交易結果回傳</h3>");
     result.append("<ul>");
@@ -34,6 +50,6 @@ private String buildHtmlResponse(Map<String, String> params) {
 
     result.append("</ul></body></html>");
     return result.toString();
-    }
+    }*/
 }
 

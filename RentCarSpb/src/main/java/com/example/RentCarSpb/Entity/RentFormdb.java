@@ -65,6 +65,11 @@ public class RentFormdb {
     public RentFormdb() {
 
     }
+
+    public RentFormdb(String form_id) {
+        this.formid = form_id;
+    }
+
     @PrePersist
     private void generateFormId() {
     if (this.formid == null || this.formid.isEmpty()) {
