@@ -18,8 +18,9 @@ public class PaymentController {
 
     private final AllInOne allInOne;
 
+    // 保持初始化不變
     public PaymentController() {
-        allInOne = new AllInOne(""); // 初始化 AllInOne 對象
+        allInOne = new AllInOne(""); // 確保這裡設置了正確的商戶 ID 和密鑰
     }
 
     @GetMapping(value = "/payment", produces = "text/html")
@@ -27,11 +28,9 @@ public class PaymentController {
     public String processPayment(@RequestParam String formid, @RequestParam String total) {
         AioCheckOutALL obj = new AioCheckOutALL();
 
-        // 設置當前日期和時間
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         String currentDateTime = LocalDateTime.now().format(formatter);
 
-        // 生成唯一的訂單編號
         String uuid = UUID.randomUUID().toString().replace("-", "");
         String tradeNo = uuid.length() > 20 ? uuid.substring(0, 20) : uuid;
 
@@ -40,14 +39,16 @@ public class PaymentController {
         obj.setTotalAmount(total);
         obj.setTradeDesc("GoRent Payment");
         obj.setItemName("GoRent 租車服務");
-        obj.setReturnURL("http://localhost:3000/");
-        obj.setOrderResultURL("http://localhost:3000/paymentResult");
+        obj.setReturnURL("http://localhost:3000/"); // 確保這裡是正確的回調 URL
+        obj.setOrderResultURL("http://localhost:3000/paymentResult?MerchantTradeNo=" + tradeNo); // 確保這裡是正確的結果 URL，並包含 MerchantTradeNo 參數
 
         String form = "";
         try {
             form = allInOne.aioCheckOut(obj, null);
         } catch (EcpayException e) {
             e.printStackTrace();
+            // 返回錯誤信息
+            return "<html><body><h1>付款錯誤</h1><p>付款處理失敗，請稍後再試。</p></body></html>";
         }
         return form;
     }

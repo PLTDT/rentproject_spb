@@ -12,14 +12,34 @@ import java.util.Map;
 public class PaymentResultController {
 
     @GetMapping("/paymentResult")
-    public ResponseEntity<Map<String, String>> handleGetRequest(@RequestParam Map<String, String> params) {
-        // 返回 JSON 格式的資料
-        return ResponseEntity.ok(params);
+    public ResponseEntity<String> handleGetRequest(@RequestParam Map<String, String> params) {
+        String merchantTradeNo = params.get("MerchantTradeNo");
+        System.out.println("Received MerchantTradeNo (GET): " + merchantTradeNo); // 輸出到控制台
+
+        if (merchantTradeNo == null) {
+            return ResponseEntity.badRequest().body("<html><body><h1>Error</h1><p>Missing MerchantTradeNo in query parameters</p></body></html>");
+        }
+
+        // 返回包含自動重定向的HTML內容
+        String htmlResponse = "<html><body>" +
+                "<script>window.location.href = 'http://localhost:3000/paymentResult?MerchantTradeNo=" + merchantTradeNo + "';</script>" +
+                "</body></html>";
+        return ResponseEntity.ok().body(htmlResponse);
     }
 
     @PostMapping("/paymentResult")
-    public ResponseEntity<Map<String, String>> handlePostRequest(@RequestParam Map<String, String> params) {
-        // 返回 JSON 格式的資料
-        return ResponseEntity.ok(params);
+    public ResponseEntity<String> handlePostRequest(@RequestParam Map<String, String> params) {
+        String merchantTradeNo = params.get("MerchantTradeNo");
+        System.out.println("Received MerchantTradeNo (POST): " + merchantTradeNo); // 輸出到控制台
+
+        if (merchantTradeNo == null) {
+            return ResponseEntity.badRequest().body("<html><body><h1>Error</h1><p>Missing MerchantTradeNo in request parameters</p></body></html>");
+        }
+
+        // 返回包含自動重定向的HTML內容
+        String htmlResponse = "<html><body>" +
+                "<script>window.location.href = 'http://localhost:3000/paymentResult?MerchantTradeNo=" + merchantTradeNo + "';</script>" +
+                "</body></html>";
+        return ResponseEntity.ok().body(htmlResponse);
     }
 }
