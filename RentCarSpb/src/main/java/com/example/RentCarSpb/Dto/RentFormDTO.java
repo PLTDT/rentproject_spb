@@ -20,13 +20,16 @@ public class RentFormDTO {
 
     private int passenger;
 
-    private String couponcode;
+    private String paystatus;
 
     private String customername;
 
     private String customeremail;
 
-    public RentFormDTO(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode,String customername, String customeremail) {  
+    private boolean isdeleted;
+
+    public RentFormDTO(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String paystatus,String customername, String customeremail,boolean isdeleted) {
+        
         this.formid = formid;
         this.rentplace = rentplace;
         this.returnplace = returnplace;
@@ -35,9 +38,10 @@ public class RentFormDTO {
         this.carid = carid;
         this.carbrand = carbrand;
         this.passenger = passenger;
-        this.couponcode = couponcode;
+        this.paystatus = paystatus;
         this.customername = customername;
         this.customeremail = customeremail;
+        this.isdeleted = isdeleted;
     }
 
     public RentFormDTO() {
@@ -107,12 +111,12 @@ public class RentFormDTO {
         this.passenger = passenger;
     }
 
-    public String getCouponcode() {
-        return couponcode;
+    public String getPaystatus() {
+        return paystatus;
     }
 
-    public void setCouponcode(String couponcode) {
-        this.couponcode = couponcode;
+    public void setPaystatus(String paystatus) {
+        this.paystatus = paystatus;
     }   
 
     public String getCustomername() {
@@ -130,12 +134,20 @@ public class RentFormDTO {
     public void setCustomeremail(String customeremail) {
         this.customeremail = customeremail;
     }
-    
+    public boolean getIsdeleted() {
+        return isdeleted;
+    }
+
+    public void setIsdeleted(boolean isdeleted) {
+        this.isdeleted = isdeleted;
+    }     
     @Override
     public String toString() {
         return "RentFormDTO [formid=" + formid + ", rentplace=" + rentplace + ", returnplace=" + returnplace
                 + ", rentdate=" + rentdate + ", returndate=" + returndate + ", carid=" + carid + ", carbrand="
-                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode +", customername="+ customername + ", customeremail=" + customeremail +  "]";
-    }                 
+                + carbrand + ", passenger=" + passenger + ", paystatus =" + paystatus +", customername="+ customername + ", customeremail=" + customeremail +", isdeleted=" + isdeleted + "]";
+    }
+
+                
 
 }

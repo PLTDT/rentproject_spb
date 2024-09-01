@@ -40,8 +40,8 @@ public class RentFormdb {
     @Column(name = "passenger")
     private int passenger;
 
-    @Column(name = "coupon_code", length=255)
-    private String couponcode;
+    @Column(name = "pay_status", length=255)
+    private String paystatus;
 
     @Column(name = "customer_name", length=255)
     private String customername;
@@ -49,7 +49,11 @@ public class RentFormdb {
     @Column(name = "customer_email", length=255)
     private String customeremail;
 
-    public RentFormdb(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String couponcode,String customername, String customeremail) {  
+    @Column(name = "isdeleted")
+    private boolean isdeleted;
+
+    public RentFormdb(String formid, String rentplace, String returnplace, Date rentdate, Date returndate, int carid, String carbrand, int passenger, String paystatus,String customername, String customeremail,boolean isdeleted) {
+    
         this.formid = formid;
         this.rentplace = rentplace;
         this.returnplace = returnplace;
@@ -58,9 +62,10 @@ public class RentFormdb {
         this.carid = carid;
         this.carbrand = carbrand;
         this.passenger = passenger;
-        this.couponcode = couponcode;
+        this.paystatus = paystatus;
         this.customername=customername;
         this.customeremail=customeremail;
+        this.isdeleted=isdeleted;
     }
     public RentFormdb() {
 
@@ -160,12 +165,12 @@ public class RentFormdb {
         this.passenger = passenger;
     }
 
-    public String getCouponcode() {
-        return couponcode;
+    public String getPaystatus() {
+        return paystatus;
     }
 
-    public void setCouponcode(String couponcode) {
-        this.couponcode = couponcode;
+    public void setPaystatus(String paystatus) {
+        this.paystatus = paystatus;
     }
     
 
@@ -185,13 +190,23 @@ public class RentFormdb {
         this.customeremail = custumeremail;
     }
 
+    public boolean isIsdeleted() {
+        return isdeleted;
+    }
+    public void setIsdeleted(boolean isdeleted) {
+        this.isdeleted = isdeleted;
+    }
+
+    public void setSyncField(String paystatus) {
+        this.paystatus = paystatus;
+    }
 
     @Override
     public String toString() {
         return "RentFormdb [formid=" + formid + ", rentplace=" + rentplace + ", returnplace=" + returnplace
                 + ", rentdate=" + rentdate + ", returndate=" + returndate + ", carid=" + carid + ", carbrand="
-                + carbrand + ", passenger=" + passenger + ", couponcode=" + couponcode +", customername=" + customername+ ", customeremail=" + customeremail + "]";
+                + carbrand + ", passenger=" + passenger + ", paystatus=" + paystatus +", customername=" + customername+ ", customeremail=" + customeremail + ", isdeleted=" + isdeleted + "]";
                 
     }
-
+    
 }

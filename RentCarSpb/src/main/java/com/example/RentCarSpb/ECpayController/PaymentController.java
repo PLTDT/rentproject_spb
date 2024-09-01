@@ -3,6 +3,7 @@ package com.example.RentCarSpb.ECpayController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import ecpay.payment.integration.AllInOne;
@@ -31,7 +32,7 @@ public class PaymentController {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         String currentDateTime = LocalDateTime.now().format(formatter);
 
-        String uuid = UUID.randomUUID().toString().replace("-", "");
+        String uuid = (formid + (UUID.randomUUID().toString())).replace("-", "");
         String tradeNo = uuid.length() > 20 ? uuid.substring(0, 20) : uuid;
 
         obj.setMerchantTradeNo(tradeNo);
@@ -40,16 +41,16 @@ public class PaymentController {
         obj.setTradeDesc("GoRent Payment");
         obj.setItemName("GoRent 租車服務");
         obj.setReturnURL("http://localhost:3000/"); // 確保這裡是正確的回調 URL
-        obj.setOrderResultURL("http://localhost:3000/paymentResult?MerchantTradeNo=" + tradeNo); // 確保這裡是正確的結果 URL，並包含 MerchantTradeNo 參數
+        obj.setOrderResultURL("http://localhost:3000/paymentResult?MerchantTradeNo=" + tradeNo + "&MerchantTradeDate=" + currentDateTime + "&formid=" + formid); // 包含 formid
 
         String form = "";
         try {
             form = allInOne.aioCheckOut(obj, null);
         } catch (EcpayException e) {
             e.printStackTrace();
-            // 返回錯誤信息
             return "<html><body><h1>付款錯誤</h1><p>付款處理失敗，請稍後再試。</p></body></html>";
         }
         return form;
     }
+
 }

@@ -55,7 +55,10 @@ public class Paydb {
     @Column(name="paystatus")
     private String paystatus; 
 
-    public Paydb(Long payid, RentFormdb formid, String customername, String customeremail,String carbrand, Date rentdate, Date returndate, Integer totaldays, Date paydate, Integer total, String paymethod, String paystatus) {
+    @Column(name="isdeleted")
+    private boolean isdeleted;
+
+    public Paydb(Long payid, RentFormdb formid, String customername, String customeremail,String carbrand, Date rentdate, Date returndate, Integer totaldays, Date paydate, Integer total, String paymethod, String paystatus, boolean isdeleted) {
         this.payid = payid;
         this.formid = formid;
         this.customername = customername;
@@ -68,6 +71,7 @@ public class Paydb {
         this.total = total;
         this.paymethod = paymethod;
         this.paystatus = paystatus;
+        this.isdeleted = isdeleted;
     }
 
     public Paydb() {
@@ -172,10 +176,26 @@ public class Paydb {
         this.paystatus = paystatus;
     }
 
+    public boolean getIsdeleted() {
+        return isdeleted;
+    }   
+
+    public void setIsdeleted(boolean isdeleted) {
+        this.isdeleted = isdeleted;
+    }
+
+    public String getSyncField() {
+        return paystatus;
+    }
+
+    public void setSyncField(String paystatus) {
+        this.paystatus = paystatus;
+    }
+
     @Override
     public String toString() {
         return "Paydb [customeremail=" + customeremail + ", customername=" + customername +", carbrand=" + carbrand + ", rentdate=" + 
         rentdate + ", returndate=" + returndate + ", totaldays=" + totaldays +  ", paydate=" + paydate+", payid=" + payid + ", paymethod=" 
-        + paymethod + ", paystatus=" + paystatus + ", formid=" + formid + ", total=" + total + "]";
+        + paymethod + ", paystatus=" + paystatus + ", formid=" + formid + ", total=" + total + ", isdeleted=" + isdeleted + "]";
     }
 }

@@ -2,8 +2,11 @@ package com.example.RentCarSpb.Service.impl;
 
 import java.sql.Date;
 import java.util.Optional;
+import java.util.List;
 
+//import org.hibernate.mapping.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import com.example.RentCarSpb.Dto.PayDTO;
@@ -12,6 +15,9 @@ import com.example.RentCarSpb.Entity.RentFormdb;
 import com.example.RentCarSpb.Repo.PayRepo;
 import com.example.RentCarSpb.Repo.RentFormRepo;
 import com.example.RentCarSpb.Service.PayService;
+
+//import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 
 @Service
 public class PayIMPL implements PayService {
@@ -41,12 +47,14 @@ public class PayIMPL implements PayService {
         int totaldays = (payDTO.getTotaldays() != null) 
                         ? payDTO.getTotaldays() 
                         : calculateTotalDays(payDTO.getRentdate(), payDTO.getReturndate());
-        String paymethod = (payDTO.getPaymethod() != null) ? payDTO.getPaymethod() : "unknown";
-        String paystatus = (payDTO.getPaystatus() != null) ? payDTO.getPaystatus() : "pending";
+        String paymethod = (payDTO.getPaymethod() != null) ? payDTO.getPaymethod() : "未付款";
+        String paystatus = (payDTO.getPaystatus() != null) ? payDTO.getPaystatus() : "未知";
 
         int carprice = getCarPrice(payDTO.getCarbrand());
 
-        int total = (payDTO.getTotal() != null) ? payDTO.getTotal() : totaldays * carprice;
+        Integer total = (payDTO.getTotal() != null) ? payDTO.getTotal() : totaldays * carprice;
+
+        boolean isdeleted = false;
 
         // Create a new Paydb entity and associate it with the RentFormdb
         Paydb paydb = new Paydb(
@@ -61,7 +69,8 @@ public class PayIMPL implements PayService {
             paydate,
             total,
             paymethod,
-            paystatus
+            paystatus,
+            isdeleted
         );
 
         // Save the new Paydb entity to the database
@@ -106,5 +115,67 @@ public class PayIMPL implements PayService {
     RentFormdb rentFormdb = rentFormRepo.findByFormid(formid)
                                         .orElseThrow(() -> new IllegalArgumentException("Invalid form ID: " + formid));
     return payRepo.findByFormid(rentFormdb);
-}
+    }
+
+    @Override
+    public Optional<Paydb> deletePaydata(String formid) {
+        // Fetch the RentFormdb record using the formid
+        RentFormdb rentFormdb = rentFormRepo.findByFormid(formid)
+                                            .orElseThrow(() -> new IllegalArgumentException("Invalid form ID: " + formid));
+        
+        // Fetch the corresponding Paydb record using the RentFormdb entity
+        Optional<Paydb> paydbOpt = payRepo.findByFormid(rentFormdb);
+
+        if (paydbOpt.isPresent()) {
+            // Update the isdeleted field for both RentFormdb and Paydb
+            rentFormdb.setIsdeleted(true);
+            rentFormRepo.save(rentFormdb); // Save the updated RentFormdb entity
+            
+            Paydb paydb = paydbOpt.get();
+            paydb.setIsdeleted(true);
+            payRepo.save(paydb); // Save the updated Paydb entity
+            
+            return Optional.of(paydb);
+        }
+        
+        return Optional.empty();
+    }
+
+    @Override
+    public Optional<Paydb> updatePaydata(RentFormdb formid, Date merchantTradeDate, String paymethod, String paystatus) {
+    // Fetch the Paydb record using the formid
+    Optional<Paydb> paydataOptional = payRepo.findByFormid(formid);
+    
+    if (paydataOptional.isPresent()) {
+        Paydb paydata = paydataOptional.get();
+
+        // Update the fields
+        paydata.setPaydate(merchantTradeDate);
+        paydata.setPaymethod(paymethod);
+        paydata.setPaystatus(paystatus);
+        
+        // Save the updated record to the database
+        return Optional.of(payRepo.save(paydata));
+    }
+    
+    // Return an empty Optional if the formid doesn't exist
+    return Optional.empty();
+    }
+
+
+    @Transactional
+    @Scheduled(fixedRate = 60000)  // 每隔60秒執行一次
+    public void syncEntities() {
+        List<Paydb> paydbList = payRepo.findAll();  // 取出所有的 Paydb 记录
+        
+        for (Paydb paydb : paydbList) {
+            RentFormdb rentFormdb = paydb.getFormid();
+            if (rentFormdb != null) {
+                String paystatus = paydb.getSyncField();  // 取出需要同步的字段
+                rentFormdb.setSyncField(paystatus);
+                rentFormRepo.save(rentFormdb);
+            }
+        }
+    }
+
 }

@@ -17,9 +17,9 @@ public class PayDTO {
     private Integer total;  // Changed from int to Integer
     private String paymethod;
     private String paystatus;
-
+    private boolean isdeleted;
     // Constructors
-    public PayDTO(Long payid, RentFormdb formid, String customername, String customeremail,String carbrand, Date rentdate, Date returndate, Integer totaldays, Date paydate, Integer total, String paymethod, String paystatus) {
+    public PayDTO(Long payid, RentFormdb formid, String customername, String customeremail,String carbrand, Date rentdate, Date returndate, Integer totaldays, Date paydate, Integer total, String paymethod, String paystatus, boolean isdeleted) {
         this.payid = payid;
         this.formid = formid;
         this.customername = customername;
@@ -32,6 +32,7 @@ public class PayDTO {
         this.total = total;
         this.paymethod = paymethod;
         this.paystatus = paystatus;
+        this.isdeleted = isdeleted;
     }
 
     public PayDTO() {
@@ -133,10 +134,20 @@ public class PayDTO {
         this.paystatus = paystatus;
     }
 
+    public boolean getIsdeleted() {
+        return isdeleted;
+    }
+
+    public void setIsdeleted(boolean isdeleted) {
+        this.isdeleted = isdeleted;
+    }
+
     @Override
     public String toString() {
         return "PayDTO [payid=" + payid + ", formid=" + formid + ", customername=" + customername + ", customeremail=" + customeremail+ 
         ", carbrand=" + carbrand + ", rentdate=" + rentdate + ", returndate=" + returndate + ", paydate=" + paydate + ", total=" + total + 
-        ", paymethod=" + paymethod + ", paystatus=" + paystatus + "]";
+        ", paymethod=" + paymethod + ", paystatus=" + paystatus +  ", isdeleted=" + isdeleted + "]";
     }
+
+    
 }

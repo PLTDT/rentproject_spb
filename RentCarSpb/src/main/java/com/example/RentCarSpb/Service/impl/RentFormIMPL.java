@@ -19,6 +19,10 @@ public class RentFormIMPL implements RentFormService {
     @Override
     public String addRentForm(RentFormDTO rentFormDTO) {
         
+        boolean isdeleted = false;
+
+        String paystatus ="未付款";
+        
         RentFormdb rentformdb = new RentFormdb(
             rentFormDTO.getFormid(),
             rentFormDTO.getRentplace(),
@@ -28,9 +32,10 @@ public class RentFormIMPL implements RentFormService {
             rentFormDTO.getCarid(),
             rentFormDTO.getCarbrand(),
             rentFormDTO.getPassenger(),
-            rentFormDTO.getCouponcode(),
+            paystatus,
             rentFormDTO.getCustomername(),
-            rentFormDTO.getCustomeremail()
+            rentFormDTO.getCustomeremail(),
+            isdeleted
         );
 
         rentformRepo.save(rentformdb);
@@ -48,4 +53,5 @@ public class RentFormIMPL implements RentFormService {
         return rentformRepo.findByCustomeremail(customeremail);
     }
 
+    
 }
