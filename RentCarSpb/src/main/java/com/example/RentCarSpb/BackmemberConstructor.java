@@ -1,13 +1,13 @@
 package com.example.RentCarSpb;
 
-public class Test2 {
+public class BackmemberConstructor {
     private int employee_id;
     private String email;
     private String employee_name;
     private String password;
 
     // 強制要求傳入參數的構造函數
-    public Test2(int employee_id, String email,String employee_name, String password) {
+    public BackmemberConstructor(int employee_id, String email,String employee_name, String password) {
         this.employee_id = employee_id;
         this.employee_name = employee_name;
         this.email = email;
@@ -15,7 +15,7 @@ public class Test2 {
     }
 
     // 可選的無參構造函數，設置默認值
-    public Test2() {
+    public BackmemberConstructor() {
         this.employee_id = 0;
         this.employee_name = "DefaultName";
         this.email = "default@example.com";
@@ -56,6 +56,6 @@ public class Test2 {
 
     @Override
     public String toString() {
-        return "Test2 [employee_id=" + employee_id + ", employee_name=" + employee_name + ", email=" + email + ", password=" + password + "]";
+        return "BackmemberConstructor [employee_id=" + employee_id + ", employee_name=" + employee_name + ", email=" + email + ", password=" + password + "]";
     }
 }

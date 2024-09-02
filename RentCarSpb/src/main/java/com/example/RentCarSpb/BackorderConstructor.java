@@ -1,6 +1,6 @@
 package com.example.RentCarSpb;
 
-public class Test1 {
+public class BackorderConstructor {
     private int car_id;
     private String form_id;
     private int passenger;
@@ -15,7 +15,7 @@ public class Test1 {
     private int total;
     private String status;
 
-    public Test1(int car_id, String form_id, int passenger, String rent_date, String return_date, String car_brand,
+    public BackorderConstructor(int car_id, String form_id, int passenger, String rent_date, String return_date, String car_brand,
             String coupon_code, String rent_place, String return_place, String customer_email, String customer_name,
             int total, String status) {
         this.car_id = car_id;
@@ -32,7 +32,7 @@ public class Test1 {
         this.total = total;
         this.status = status;
     }
-    public Test1(){
+    public BackorderConstructor(){
         this.car_id = 123 ;
         this.form_id = "";
         this.passenger = 0;
@@ -154,7 +154,7 @@ public class Test1 {
 
     @Override
     public String toString() {
-        return "Test1 [car_id=" + car_id + ", form_id=" + form_id + ", passenger=" + passenger + ", rent_date="
+        return "BackorderConstructor [car_id=" + car_id + ", form_id=" + form_id + ", passenger=" + passenger + ", rent_date="
                 + rent_date + ", return_date=" + return_date + ", car_brand=" + car_brand + ", coupon_code="
                 + coupon_code + ", rent_place=" + rent_place + ", return_place=" + return_place + ", customer_email="
                 + customer_email + ", customer_name=" + customer_name + ", total=" + total + ", status=" + status + "]";

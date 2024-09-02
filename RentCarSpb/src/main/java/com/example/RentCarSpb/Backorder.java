@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping; // 映射HTTP請�
 import org.springframework.web.bind.annotation.RestController; // 聲明一個RESTful控制器的註解
 
 @CrossOrigin(origins = "http://localhost:3000") // 允許從http://localhost:3000（通常是React開發伺服器）發起的跨域請求
-@RequestMapping("/daniel") // 將控制器映射到/daniel路徑下
+@RequestMapping("/daniel4") // 將控制器映射到/daniel路徑下
 @RestController // 將該類聲明為RESTful控制器，處理HTTP請求並返回JSON等響應
 public class Backorder {
 
@@ -19,15 +19,15 @@ public class Backorder {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @RequestMapping(path = "/getallorders", produces = "application/json") // 將HTTP GET請求映射到/getallorders路徑，並指定返回JSON數據
-    public List<Test1> getAllOrders() {
+    public List<BackorderConstructor> getAllOrders() {
         // 定義SQL查詢語句，選擇test1表中的所有數據
         String sql = "SELECT * FROM rentform";
         
         // 定義RowMapper，將查詢結果的每一行映射到Test1對象
-        RowMapper<Test1> rowMapper = new BeanPropertyRowMapper<>(Test1.class);
+        RowMapper<BackorderConstructor> rowMapper = new BeanPropertyRowMapper<>(BackorderConstructor.class);
         
         // 執行SQL查詢，並將結果映射為List<Test1>
-        List<Test1> orders = namedParameterJdbcTemplate.query(sql, rowMapper);
+        List<BackorderConstructor> orders = namedParameterJdbcTemplate.query(sql, rowMapper);
 
         // 打印輸出每一個訂單對象的內容，以檢查訂單金額是否正確映射
         orders.forEach(order -> System.out.println(order.toString()));

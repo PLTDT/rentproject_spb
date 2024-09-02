@@ -19,15 +19,15 @@ public class Backmember {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @RequestMapping(path = "/getallorders2", produces = "application/json") // 將HTTP GET請求映射到/getallorders路徑，並指定返回JSON數據
-    public List<Test2> getAllOrders() {
+    public List<BackmemberConstructor> getAllOrders() {
         // 定義SQL查詢語句，選擇test2表中的所有數據
         String sql = "SELECT * FROM employee";
         
         // 定義RowMapper，將查詢結果的每一行映射到Test2對象
-        RowMapper<Test2> rowMapper = new BeanPropertyRowMapper<>(Test2.class);
+        RowMapper<BackmemberConstructor> rowMapper = new BeanPropertyRowMapper<>(BackmemberConstructor.class);
         
         // 執行SQL查詢，並將結果映射為List<Test2>
-        List<Test2> orders = namedParameterJdbcTemplate.query(sql, rowMapper);
+        List<BackmemberConstructor> orders = namedParameterJdbcTemplate.query(sql, rowMapper);
 
         // 打印輸出每一個訂單對象的內容，以檢查訂單是否正確映射
         orders.forEach(order -> System.out.println(order.toString()));
