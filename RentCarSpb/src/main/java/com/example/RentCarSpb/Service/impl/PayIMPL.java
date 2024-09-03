@@ -117,7 +117,7 @@ public class PayIMPL implements PayService {
     return payRepo.findByFormid(rentFormdb);
     }
 
-    @Override
+    /*@Override
     public Optional<Paydb> deletePaydata(String formid) {
         // Fetch the RentFormdb record using the formid
         RentFormdb rentFormdb = rentFormRepo.findByFormid(formid)
@@ -139,7 +139,7 @@ public class PayIMPL implements PayService {
         }
         
         return Optional.empty();
-    }
+    }*/
 
     @Override
     public Optional<Paydb> updatePaydata(RentFormdb formid, Date merchantTradeDate, String paymethod, String paystatus) {
@@ -164,7 +164,7 @@ public class PayIMPL implements PayService {
 
 
     @Transactional
-    @Scheduled(fixedRate = 60000)  // 每隔60秒執行一次
+    @Scheduled(fixedRate = 10000)  // 每隔60秒執行一次
     public void syncEntities() {
         List<Paydb> paydbList = payRepo.findAll();  // 取出所有的 Paydb 记录
         

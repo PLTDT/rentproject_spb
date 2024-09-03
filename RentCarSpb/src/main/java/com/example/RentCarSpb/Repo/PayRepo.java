@@ -14,7 +14,7 @@ import com.example.RentCarSpb.Entity.RentFormdb;
 @Repository
 public interface PayRepo extends JpaRepository<Paydb, Integer> {
 
-    //Optional<Paydb> findByFormid(String formid);
+    //Optional<Paydb> findByFormId(String formid);
 
     Optional<Paydb> findByFormid(RentFormdb formid);
 

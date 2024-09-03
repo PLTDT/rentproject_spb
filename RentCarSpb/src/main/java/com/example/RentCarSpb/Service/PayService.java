@@ -18,7 +18,7 @@ public interface PayService {
 
     Optional<Paydb> getPaydata(String formid);
 
-    Optional<Paydb> deletePaydata(String formid);
+    /*Optional<Paydb> deletePaydata(String formid);*/
 
     Optional<Paydb> updatePaydata(RentFormdb formid, Date paydate, String paymethod, String paystatus);
 

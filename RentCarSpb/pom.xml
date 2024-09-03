@@ -115,6 +115,22 @@
     	    <artifactId>thymeleaf</artifactId>
     	    <version>3.1.2.RELEASE</version>
     	</dependency>
+		<!--linepay-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+		  	<groupId>com.google.guava</groupId>
+		  	<artifactId>guava</artifactId>
+		  	<version>28.1-jre</version>
+		  	<!-- or, for Android:<version>28.1-android</version>-->
+		</dependency>
+		<dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.15</version>
+		</dependency>
 	</dependencies>
 
 	<!-- 构建插件 -->

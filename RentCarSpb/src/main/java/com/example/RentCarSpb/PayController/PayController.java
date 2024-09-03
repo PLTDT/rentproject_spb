@@ -37,7 +37,7 @@ public class PayController {
         return paydata;
     }
 
-    @PostMapping(path="/deletedata")
+    /*@PostMapping(path="/deletedata")
     public ResponseEntity<Optional<Paydb>> deletePaydata(@RequestParam String formid) {
     Optional<Paydb> deletedPaydata = payService.deletePaydata(formid);
         if (deletedPaydata.isPresent()) {
@@ -45,7 +45,7 @@ public class PayController {
         } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Optional.empty());
         }
-    }
+    }*/
 
     @PostMapping("/updatedata")
     public ResponseEntity<?> updatePayData(@RequestBody PayDTO request) {
