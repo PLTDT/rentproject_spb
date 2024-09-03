@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.RentCarSpb.Dto.PayDTO; 
 import com.example.RentCarSpb.Entity.Paydb;
+import com.example.RentCarSpb.Entity.RentFormdb;
 //import com.example.RentCarSpb.Entity.RentFormdb;
 import com.example.RentCarSpb.Service.PayService;
 
