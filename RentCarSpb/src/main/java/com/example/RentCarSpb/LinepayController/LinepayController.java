@@ -108,7 +108,7 @@ public class LinepayController {
 
         form.setPackages(Arrays.asList(productPackageForm));
         RedirectUrls redirectUrls = new RedirectUrls();
-        redirectUrls.setConfirmUrl("http://localhost:3000/LinePayResult?transactionId=" + orderId + "&total=" + total + "&formid=" + formid);
+        redirectUrls.setConfirmUrl("https://tongbro.ddns.net:443/LinePayResult?transactionId=" + orderId + "&total=" + total + "&formid=" + formid);
         redirectUrls.setCancelUrl("");
         form.setRedirectUrls(redirectUrls);
 

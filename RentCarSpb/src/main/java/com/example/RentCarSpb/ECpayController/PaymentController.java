@@ -41,8 +41,8 @@ public class PaymentController {
         obj.setTotalAmount(total);
         obj.setTradeDesc("GoRent Payment");
         obj.setItemName("GoRent 租車服務");
-        obj.setReturnURL("http://localhost:3000/"); // 確保這裡是正確的回調 URL
-        obj.setOrderResultURL("http://localhost:3000/paymentResult?MerchantTradeNo=" + tradeNo + "&MerchantTradeDate=" + currentDateTime + "&formid=" + formid); // 包含 formid
+        obj.setReturnURL("https://tongbro.ddns.net:443/"); // 確保這裡是正確的回調 URL
+        obj.setOrderResultURL("https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=" + tradeNo + "&MerchantTradeDate=" + currentDateTime + "&formid=" + formid); // 包含 formid
 
         String form = "";
         try {

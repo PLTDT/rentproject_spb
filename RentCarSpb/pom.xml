@@ -123,7 +123,7 @@
 		<dependency>
 		  	<groupId>com.google.guava</groupId>
 		  	<artifactId>guava</artifactId>
-		  	<version>28.1-jre</version>
+		  	<version>33.2.1-jre</version>
 		  	<!-- or, for Android:<version>28.1-android</version>-->
 		</dependency>
 		<dependency>
