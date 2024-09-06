@@ -39,11 +39,7 @@ public class RentFormController {
     public ResponseEntity<List <RentFormdb>> getallRentForm(@RequestParam String email) {
         List<RentFormdb> rentForm = rentFormService.getRentFormByEmail(email);
 
-        if (!rentForm.isEmpty()) {
-            return ResponseEntity.ok(rentForm);
-        } else {
-            return ResponseEntity.notFound().build();
-        }
+        return ResponseEntity.ok(rentForm);
     }
     @PostMapping(path="/deletedata")
     public ResponseEntity<Optional<RentFormdb>> deletePaydata(@RequestParam String formid) {
