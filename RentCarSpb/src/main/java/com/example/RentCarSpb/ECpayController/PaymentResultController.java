@@ -55,7 +55,7 @@ public class PaymentResultController {
 
             // Return HTML content with a redirect script
             String htmlResponse = "<html><body>" +
-                    "<script>window.location.href = 'http://tongbro.ddns.net:3000/paymentResult?MerchantTradeNo=" + merchantTradeNo + "&MerchantTradeDate=" + merchantTradeDateString + "&formid=" + formidString + "';</script>" +
+                    "<script>window.location.href = 'https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=" + merchantTradeNo + "&MerchantTradeDate=" + merchantTradeDateString + "&formid=" + formidString + "';</script>" +
                     "</body></html>";
             return ResponseEntity.ok().body(htmlResponse);
 
