@@ -41,17 +41,24 @@ public class Backpay {
 
     @RequestMapping(path = "/deleteorder/{form_id}", method = RequestMethod.DELETE)
     public void deleteOrder(@PathVariable("form_id") String formId) {
-        // 定義SQL刪除語句，根據form_id刪除對應的支付記錄
-        String sql = "DELETE FROM pay WHERE form_id = :form_id";
-
-        // 使用MapSqlParameterSource將參數與SQL語句中的命名參數關聯
+        // 先從 pay 表中刪除
+        String sqlPay = "DELETE FROM pay WHERE form_id = :form_id";
+    
+        // 使用 MapSqlParameterSource 將參數與 SQL 語句中的命名參數關聯
         MapSqlParameterSource parameters = new MapSqlParameterSource();
         parameters.addValue("form_id", formId);
-
-        // 執行刪除操作
-        int rowsAffected = namedParameterJdbcTemplate.update(sql, parameters);
-
+    
+        // 執行 pay 表的刪除操作
+        int payRowsAffected = namedParameterJdbcTemplate.update(sqlPay, parameters);
+    
+        // 然後從 RentForm 表中刪除
+        String sqlrentform = "DELETE FROM rentform WHERE form_id = :form_id";
+        int rentFormRowsAffected = namedParameterJdbcTemplate.update(sqlrentform, parameters);
+    
         // 輸出受影響的行數（即刪除的記錄數量）
-        System.out.println("刪除了 " + rowsAffected + " 筆支付記錄");
+        System.out.println("刪除了 " + payRowsAffected + " 筆支付記錄");
+        System.out.println("刪除了 " + rentFormRowsAffected + " 筆租賃表單記錄");
     }
+
 }
+    
