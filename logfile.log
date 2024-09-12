@@ -1,0 +1,1141 @@
+2024-09-12T14:44:33.347+08:00  INFO 39992 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 39992 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T14:44:33.349+08:00  INFO 39992 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T14:44:33.817+08:00  INFO 39992 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T14:44:33.872+08:00  INFO 39992 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-09-12T14:44:34.390+08:00  INFO 39992 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T14:44:34.402+08:00  INFO 39992 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T14:44:34.403+08:00  INFO 39992 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T14:44:34.459+08:00  INFO 39992 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T14:44:34.460+08:00  INFO 39992 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1078 ms
+2024-09-12T14:44:34.578+08:00  INFO 39992 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T14:44:34.725+08:00  INFO 39992 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7c1a8f0f
+2024-09-12T14:44:34.727+08:00  INFO 39992 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T14:44:34.766+08:00  INFO 39992 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T14:44:34.804+08:00  INFO 39992 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T14:44:34.828+08:00  INFO 39992 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T14:44:35.042+08:00  INFO 39992 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T14:44:35.085+08:00  WARN 39992 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T14:44:35.714+08:00  INFO 39992 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T14:44:35.756+08:00  INFO 39992 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T14:44:36.142+08:00  WARN 39992 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T14:44:36.595+08:00  INFO 39992 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T14:44:36.612+08:00  INFO 39992 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T14:44:36.625+08:00  INFO 39992 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.574 seconds (process running for 3.84)
+2024-09-12T14:45:28.228+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T14:45:28.229+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T14:45:28.231+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-12T14:45:53.664+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e2d307b86780, StoreID=, MerchantTradeDate=2024/09/12 14:45:53, PaymentType=aio, TotalAmount=20000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e2d307b86780&MerchantTradeDate=2024/09/12 14:45:53&formid=20240912-e2d3, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T14:46:40.853+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-3] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e2d3d5d43766, StoreID=, MerchantTradeDate=2024/09/12 14:46:40, PaymentType=aio, TotalAmount=20000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e2d3d5d43766&MerchantTradeDate=2024/09/12 14:46:40&formid=20240912-e2d3, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T14:48:06.997+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-7] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e4b18cea40c0, StoreID=, MerchantTradeDate=2024/09/12 14:48:06, PaymentType=aio, TotalAmount=22500, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e4b18cea40c0&MerchantTradeDate=2024/09/12 14:48:06&formid=20240912-e4b1, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T14:56:41.582+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-10] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=2024091258c079baa8b2, StoreID=, MerchantTradeDate=2024/09/12 14:56:41, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=2024091258c079baa8b2&MerchantTradeDate=2024/09/12 14:56:41&formid=20240912-58c0, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T14:59:45.231+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-9] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e550c827be71, StoreID=, MerchantTradeDate=2024/09/12 14:59:45, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e550c827be71&MerchantTradeDate=2024/09/12 14:59:45&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T15:15:27.292+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-10] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912653ac79d0e5b, StoreID=, MerchantTradeDate=2024/09/12 15:15:27, PaymentType=aio, TotalAmount=17500, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912653ac79d0e5b&MerchantTradeDate=2024/09/12 15:15:27&formid=20240912-653a, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T15:20:02.171+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-3] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e55015934d82, StoreID=, MerchantTradeDate=2024/09/12 15:20:02, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e55015934d82&MerchantTradeDate=2024/09/12 15:20:02&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T15:25:12.227+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-3] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912653adf41cc6f, StoreID=, MerchantTradeDate=2024/09/12 15:25:12, PaymentType=aio, TotalAmount=17500, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912653adf41cc6f&MerchantTradeDate=2024/09/12 15:25:12&formid=20240912-653a, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T15:57:07.921+08:00  INFO 39992 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=202409126293cbf48e06, StoreID=, MerchantTradeDate=2024/09/12 15:57:07, PaymentType=aio, TotalAmount=45000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=202409126293cbf48e06&MerchantTradeDate=2024/09/12 15:57:07&formid=20240912-6293, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:07:16.351+08:00  INFO 36928 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 36928 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:07:16.353+08:00  INFO 36928 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:07:16.841+08:00  INFO 36928 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:07:16.892+08:00  INFO 36928 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:07:17.435+08:00  INFO 36928 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:07:17.455+08:00  INFO 36928 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:07:17.456+08:00  INFO 36928 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:07:17.510+08:00  INFO 36928 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:07:17.511+08:00  INFO 36928 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1125 ms
+2024-09-12T16:07:17.622+08:00  INFO 36928 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:07:20.974+08:00  INFO 36928 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:07:21.010+08:00  INFO 36928 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:07:21.036+08:00  INFO 36928 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:07:21.243+08:00  INFO 36928 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:07:21.264+08:00  INFO 36928 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:07:22.267+08:00  WARN 36928 --- [RentCarSpb] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.example.RentCarSpb.RentCarSpbApplication.main(RentCarSpbApplication.java:14) ~[classes/:na]
+
+2024-09-12T16:07:22.284+08:00  WARN 36928 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:07:22.868+08:00  INFO 36928 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:07:22.882+08:00  INFO 36928 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:07:23.891+08:00  WARN 36928 --- [RentCarSpb] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08000
+2024-09-12T16:07:23.891+08:00 ERROR 36928 --- [RentCarSpb] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost
+2024-09-12T16:07:23.895+08:00 ERROR 36928 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost] [n/a]
+2024-09-12T16:07:23.896+08:00  WARN 36928 --- [RentCarSpb] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost] [n/a]
+2024-09-12T16:07:23.898+08:00  INFO 36928 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T16:07:23.906+08:00  INFO 36928 --- [RentCarSpb] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T16:07:23.917+08:00 ERROR 36928 --- [RentCarSpb] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.example.RentCarSpb.RentCarSpbApplication.main(RentCarSpbApplication.java:14) ~[classes/:na]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 15 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorMariaDBDatabaseImpl.extractMetadata(SequenceInformationExtractorMariaDBDatabaseImpl.java:46) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	... 19 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:address=(host=loaclhost)(port=3306)(type=primary). loaclhost
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:140) ~[mariadb-java-client-3.3.3.jar:na]
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:102) ~[mariadb-java-client-3.3.3.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:69) ~[mariadb-java-client-3.3.3.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:95) ~[mariadb-java-client-3.3.3.jar:na]
+	at org.mariadb.jdbc.Driver.connect(Driver.java:26) ~[mariadb-java-client-3.3.3.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 39 common frames omitted
+Caused by: java.net.UnknownHostException: loaclhost
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:134) ~[mariadb-java-client-3.3.3.jar:na]
+	... 53 common frames omitted
+
+2024-09-12T16:08:15.207+08:00  INFO 39008 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 39008 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:08:15.210+08:00  INFO 39008 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:08:15.704+08:00  INFO 39008 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:08:15.755+08:00  INFO 39008 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:08:16.323+08:00  INFO 39008 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:08:16.335+08:00  INFO 39008 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:08:16.336+08:00  INFO 39008 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:08:16.392+08:00  INFO 39008 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:08:16.393+08:00  INFO 39008 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2024-09-12T16:08:16.510+08:00  INFO 39008 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:08:16.605+08:00  INFO 39008 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@72443081
+2024-09-12T16:08:16.607+08:00  INFO 39008 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:08:16.643+08:00  INFO 39008 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:08:16.691+08:00  INFO 39008 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:08:16.714+08:00  INFO 39008 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:08:16.939+08:00  INFO 39008 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:08:16.976+08:00  WARN 39008 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:08:17.594+08:00  INFO 39008 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:08:17.626+08:00  INFO 39008 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:08:18.008+08:00  WARN 39008 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:08:18.459+08:00  INFO 39008 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:08:18.475+08:00  INFO 39008 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:08:18.486+08:00  INFO 39008 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.589 seconds (process running for 3.854)
+2024-09-12T16:08:39.951+08:00  INFO 39008 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:08:39.951+08:00  INFO 39008 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:08:39.952+08:00  INFO 39008 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:08:47.937+08:00  INFO 39008 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e550c6a72707, StoreID=, MerchantTradeDate=2024/09/12 16:08:47, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e550c6a72707&MerchantTradeDate=2024/09/12 16:08:47&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:15:04.255+08:00  INFO 21172 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 21172 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:15:04.258+08:00  INFO 21172 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:15:04.741+08:00  INFO 21172 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:15:04.789+08:00  INFO 21172 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:15:05.354+08:00  INFO 21172 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:15:05.368+08:00  INFO 21172 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:15:05.368+08:00  INFO 21172 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:15:05.425+08:00  INFO 21172 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:15:05.425+08:00  INFO 21172 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+2024-09-12T16:15:05.545+08:00  INFO 21172 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:15:05.692+08:00  INFO 21172 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@5af5d76f
+2024-09-12T16:15:05.694+08:00  INFO 21172 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:15:05.733+08:00  INFO 21172 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:15:05.773+08:00  INFO 21172 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:15:05.802+08:00  INFO 21172 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:15:06.019+08:00  INFO 21172 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:15:06.060+08:00  WARN 21172 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:15:06.687+08:00  INFO 21172 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:15:06.727+08:00  INFO 21172 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:15:07.150+08:00  WARN 21172 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:15:07.624+08:00  INFO 21172 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:15:07.637+08:00  INFO 21172 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:15:07.649+08:00  INFO 21172 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.69 seconds (process running for 3.936)
+2024-09-12T16:15:11.969+08:00  INFO 21172 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:15:11.969+08:00  INFO 21172 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:15:11.970+08:00  INFO 21172 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:15:14.892+08:00  INFO 21172 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-8] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e5508d31a72a, StoreID=, MerchantTradeDate=2024/09/12 16:15:14, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e5508d31a72a&MerchantTradeDate=2024/09/12 16:15:14&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:15:48.469+08:00  INFO 13304 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 13304 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:15:48.471+08:00  INFO 13304 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:15:48.942+08:00  INFO 13304 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:15:48.993+08:00  INFO 13304 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:15:49.501+08:00  INFO 13304 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:15:49.513+08:00  INFO 13304 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:15:49.514+08:00  INFO 13304 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:15:49.570+08:00  INFO 13304 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:15:49.571+08:00  INFO 13304 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1069 ms
+2024-09-12T16:15:49.680+08:00  INFO 13304 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:15:49.773+08:00  INFO 13304 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@67e0ff3a
+2024-09-12T16:15:49.775+08:00  INFO 13304 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:15:49.812+08:00  INFO 13304 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:15:49.859+08:00  INFO 13304 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:15:49.886+08:00  INFO 13304 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:15:50.094+08:00  INFO 13304 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:15:50.130+08:00  WARN 13304 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:15:50.749+08:00  INFO 13304 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:15:50.789+08:00  INFO 13304 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:15:51.198+08:00  WARN 13304 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:15:51.716+08:00  INFO 13304 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:15:51.731+08:00  INFO 13304 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:15:51.742+08:00  INFO 13304 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.557 seconds (process running for 3.798)
+2024-09-12T16:15:56.169+08:00  INFO 13304 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:15:56.169+08:00  INFO 13304 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:15:56.170+08:00  INFO 13304 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:15:59.481+08:00  INFO 13304 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-9] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e550bbc3f621, StoreID=, MerchantTradeDate=2024/09/12 16:15:59, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/api/ecpay/paymentResult?MerchantTradeNo=20240912e550bbc3f621&MerchantTradeDate=2024/09/12 16:15:59&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:16:32.047+08:00  INFO 26748 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 26748 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:16:32.050+08:00  INFO 26748 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:16:32.601+08:00  INFO 26748 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:16:32.655+08:00  INFO 26748 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:16:33.287+08:00  INFO 26748 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:16:33.304+08:00  INFO 26748 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:16:33.305+08:00  INFO 26748 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:16:33.368+08:00  INFO 26748 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:16:33.369+08:00  INFO 26748 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1273 ms
+2024-09-12T16:16:33.516+08:00  INFO 26748 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:16:33.655+08:00  INFO 26748 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@e3b0369
+2024-09-12T16:16:33.658+08:00  INFO 26748 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:16:33.697+08:00  INFO 26748 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:16:33.738+08:00  INFO 26748 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:16:33.764+08:00  INFO 26748 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:16:33.992+08:00  INFO 26748 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:16:34.030+08:00  WARN 26748 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:16:34.670+08:00  INFO 26748 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:16:34.710+08:00  INFO 26748 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:16:35.194+08:00  WARN 26748 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:16:35.694+08:00  INFO 26748 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:16:35.707+08:00  INFO 26748 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:16:35.719+08:00  INFO 26748 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 4.073 seconds (process running for 4.329)
+2024-09-12T16:16:52.484+08:00  INFO 26748 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:16:52.484+08:00  INFO 26748 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:16:52.485+08:00  INFO 26748 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:17:21.922+08:00  INFO 40892 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 40892 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:17:21.924+08:00  INFO 40892 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:17:22.435+08:00  INFO 40892 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:17:22.489+08:00  INFO 40892 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:17:23.031+08:00  INFO 40892 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:17:23.044+08:00  INFO 40892 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:17:23.044+08:00  INFO 40892 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:17:23.102+08:00  INFO 40892 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:17:23.103+08:00  INFO 40892 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2024-09-12T16:17:23.217+08:00  INFO 40892 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:17:23.314+08:00  INFO 40892 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3a8cea24
+2024-09-12T16:17:23.317+08:00  INFO 40892 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:17:23.364+08:00  INFO 40892 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:17:23.411+08:00  INFO 40892 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:17:23.439+08:00  INFO 40892 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:17:23.657+08:00  INFO 40892 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:17:23.697+08:00  WARN 40892 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:17:24.315+08:00  INFO 40892 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:17:24.357+08:00  INFO 40892 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:17:24.745+08:00  WARN 40892 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:17:25.173+08:00  INFO 40892 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:17:25.187+08:00  INFO 40892 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:17:25.197+08:00  INFO 40892 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.571 seconds (process running for 3.828)
+2024-09-12T16:17:28.105+08:00  INFO 20896 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 20896 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:17:28.107+08:00  INFO 20896 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:17:28.589+08:00  INFO 20896 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:17:28.639+08:00  INFO 20896 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:17:29.164+08:00  INFO 20896 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:17:29.177+08:00  INFO 20896 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:17:29.178+08:00  INFO 20896 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:17:29.234+08:00  INFO 20896 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:17:29.234+08:00  INFO 20896 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2024-09-12T16:17:29.348+08:00  INFO 20896 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:17:29.443+08:00  INFO 20896 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6588b715
+2024-09-12T16:17:29.445+08:00  INFO 20896 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:17:29.487+08:00  INFO 20896 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:17:29.546+08:00  INFO 20896 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:17:29.572+08:00  INFO 20896 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:17:29.795+08:00  INFO 20896 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:17:29.832+08:00  WARN 20896 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:17:30.456+08:00  INFO 20896 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:17:30.498+08:00  INFO 20896 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:17:30.884+08:00  WARN 20896 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:17:31.385+08:00  INFO 20896 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:17:31.403+08:00  INFO 20896 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:17:31.414+08:00  INFO 20896 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.598 seconds (process running for 3.842)
+2024-09-12T16:17:41.160+08:00  INFO 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:17:41.160+08:00  INFO 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:17:41.161+08:00  INFO 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:17:41.172+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:41.185+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:41.189+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	... 36 common frames omitted
+
+2024-09-12T16:17:43.099+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:43.104+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:43.108+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	... 36 common frames omitted
+
+2024-09-12T16:17:43.908+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:43.911+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:43.914+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	... 36 common frames omitted
+
+2024-09-12T16:17:50.161+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:50.167+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-09-12T16:17:50.170+08:00 ERROR 20896 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing [ErrorPage[errorCode=0, location=/error]]
+
+jakarta.servlet.ServletException: Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:632) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:330) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:267) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:362) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:308) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:572) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:542) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	... 36 common frames omitted
+
+2024-09-12T16:18:03.676+08:00  INFO 12284 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 12284 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:18:03.679+08:00  INFO 12284 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:18:04.146+08:00  INFO 12284 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:18:04.201+08:00  INFO 12284 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:18:04.736+08:00  INFO 12284 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:18:04.748+08:00  INFO 12284 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:18:04.748+08:00  INFO 12284 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:18:04.803+08:00  INFO 12284 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:18:04.804+08:00  INFO 12284 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1094 ms
+2024-09-12T16:18:04.914+08:00  INFO 12284 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:18:05.032+08:00  INFO 12284 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@45843650
+2024-09-12T16:18:05.035+08:00  INFO 12284 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:18:05.074+08:00  INFO 12284 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:18:05.123+08:00  INFO 12284 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:18:05.150+08:00  INFO 12284 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:18:05.394+08:00  INFO 12284 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:18:05.440+08:00  WARN 12284 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:18:06.073+08:00  INFO 12284 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:18:06.113+08:00  INFO 12284 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:18:06.516+08:00  WARN 12284 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:18:07.059+08:00  INFO 12284 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:18:07.077+08:00  INFO 12284 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:18:07.090+08:00  INFO 12284 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.71 seconds (process running for 3.962)
+2024-09-12T16:18:25.519+08:00  INFO 23440 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 23440 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:18:25.521+08:00  INFO 23440 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:18:26.039+08:00  INFO 23440 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:18:26.090+08:00  INFO 23440 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:18:26.676+08:00  INFO 23440 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:18:26.695+08:00  INFO 23440 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:18:26.695+08:00  INFO 23440 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:18:26.750+08:00  INFO 23440 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:18:26.751+08:00  INFO 23440 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1195 ms
+2024-09-12T16:18:26.877+08:00  INFO 23440 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:18:26.986+08:00  INFO 23440 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3a8cea24
+2024-09-12T16:18:26.988+08:00  INFO 23440 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:18:27.026+08:00  INFO 23440 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:18:27.076+08:00  INFO 23440 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:18:27.102+08:00  INFO 23440 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:18:27.327+08:00  INFO 23440 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:18:27.366+08:00  WARN 23440 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:18:27.988+08:00  INFO 23440 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:18:28.029+08:00  INFO 23440 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:18:28.464+08:00  WARN 23440 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:18:28.967+08:00  INFO 23440 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:18:28.985+08:00  INFO 23440 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:18:28.998+08:00  INFO 23440 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.784 seconds (process running for 4.035)
+2024-09-12T16:18:35.600+08:00  INFO 23440 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:18:35.601+08:00  INFO 23440 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:18:35.602+08:00  INFO 23440 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:18:41.315+08:00  INFO 23440 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912e5506da03cf9, StoreID=, MerchantTradeDate=2024/09/12 16:18:41, PaymentType=aio, TotalAmount=48000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912e5506da03cf9&MerchantTradeDate=2024/09/12 16:18:41&formid=20240912-e550, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:19:17.941+08:00  INFO 23440 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-10] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912b11686ab977c, StoreID=, MerchantTradeDate=2024/09/12 16:19:17, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912b11686ab977c&MerchantTradeDate=2024/09/12 16:19:17&formid=20240912-b116, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:20:17.154+08:00  INFO 21480 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 21480 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:20:17.156+08:00  INFO 21480 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:20:17.631+08:00  INFO 21480 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:20:17.682+08:00  INFO 21480 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:20:18.214+08:00  INFO 21480 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:20:18.228+08:00  INFO 21480 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:20:18.228+08:00  INFO 21480 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:20:18.284+08:00  INFO 21480 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:20:18.284+08:00  INFO 21480 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1096 ms
+2024-09-12T16:20:18.408+08:00  INFO 21480 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:20:18.537+08:00  INFO 21480 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6588b715
+2024-09-12T16:20:18.539+08:00  INFO 21480 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:20:18.576+08:00  INFO 21480 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:20:18.626+08:00  INFO 21480 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:20:18.652+08:00  INFO 21480 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:20:18.864+08:00  INFO 21480 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:20:18.901+08:00  WARN 21480 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:20:19.502+08:00  INFO 21480 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:20:19.542+08:00  INFO 21480 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:20:19.946+08:00  WARN 21480 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:20:20.418+08:00  INFO 21480 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:20:20.434+08:00  INFO 21480 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:20:20.446+08:00  INFO 21480 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.585 seconds (process running for 3.837)
+2024-09-12T16:20:34.326+08:00  INFO 21480 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:20:34.327+08:00  INFO 21480 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:20:34.328+08:00  INFO 21480 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:20:36.452+08:00  INFO 21480 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-8] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912b1162bc34bba, StoreID=, MerchantTradeDate=2024/09/12 16:20:36, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912b1162bc34bba&MerchantTradeDate=2024/09/12 16:20:36&formid=20240912-b116, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:39:34.126+08:00  INFO 21480 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-8] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912b11679258427, StoreID=, MerchantTradeDate=2024/09/12 16:39:34, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912b11679258427&MerchantTradeDate=2024/09/12 16:39:34&formid=20240912-b116, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:48:44.886+08:00  INFO 19296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 19296 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:48:44.889+08:00  INFO 19296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:48:45.392+08:00  INFO 19296 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:48:45.445+08:00  INFO 19296 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:48:45.989+08:00  INFO 19296 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:48:46.001+08:00  INFO 19296 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:48:46.002+08:00  INFO 19296 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:48:46.062+08:00  INFO 19296 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:48:46.062+08:00  INFO 19296 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2024-09-12T16:48:46.178+08:00  INFO 19296 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:48:46.306+08:00  INFO 19296 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@4e3f2908
+2024-09-12T16:48:46.308+08:00  INFO 19296 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:48:46.347+08:00  INFO 19296 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:48:46.394+08:00  INFO 19296 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:48:46.421+08:00  INFO 19296 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:48:46.650+08:00  INFO 19296 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:48:46.689+08:00  WARN 19296 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:48:47.346+08:00  INFO 19296 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:48:47.388+08:00  INFO 19296 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:48:47.824+08:00  WARN 19296 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:48:48.378+08:00  INFO 19296 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:48:48.396+08:00  INFO 19296 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:48:48.409+08:00  INFO 19296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.824 seconds (process running for 4.088)
+2024-09-12T16:48:54.917+08:00  INFO 19296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:48:54.917+08:00  INFO 19296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:48:54.917+08:00  INFO 19296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-12T16:48:56.587+08:00  INFO 19296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-8] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912b11612d17b60, StoreID=, MerchantTradeDate=2024/09/12 16:48:56, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912b11612d17b60&MerchantTradeDate=2024/09/12 16:48:56&formid=20240912-b116, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:51:22.377+08:00  INFO 19296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-10] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912b1164f3374e2, StoreID=, MerchantTradeDate=2024/09/12 16:51:22, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:443/paymentResult?MerchantTradeNo=20240912b1164f3374e2&MerchantTradeDate=2024/09/12 16:51:22&formid=20240912-b116, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:51:38.540+08:00  INFO 21280 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 21280 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:51:38.542+08:00  INFO 21280 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:51:39.041+08:00  INFO 21280 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:51:39.092+08:00  INFO 21280 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:51:39.647+08:00  INFO 21280 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:51:39.662+08:00  INFO 21280 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:51:39.663+08:00  INFO 21280 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:51:39.718+08:00  INFO 21280 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:51:39.719+08:00  INFO 21280 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1142 ms
+2024-09-12T16:51:39.839+08:00  INFO 21280 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:51:39.972+08:00  INFO 21280 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@6588b715
+2024-09-12T16:51:39.974+08:00  INFO 21280 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:51:40.015+08:00  INFO 21280 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:51:40.054+08:00  INFO 21280 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:51:40.080+08:00  INFO 21280 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:51:40.303+08:00  INFO 21280 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:51:40.341+08:00  WARN 21280 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:51:40.953+08:00  INFO 21280 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:51:40.994+08:00  INFO 21280 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:51:41.402+08:00  WARN 21280 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:51:41.898+08:00  INFO 21280 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:51:41.916+08:00  INFO 21280 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:51:41.928+08:00  INFO 21280 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.699 seconds (process running for 3.953)
+2024-09-12T16:51:45.175+08:00  INFO 21280 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:51:45.175+08:00  INFO 21280 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:51:45.176+08:00  INFO 21280 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:52:02.716+08:00  INFO 21280 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-3] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=202409122342bfc3e640, StoreID=, MerchantTradeDate=2024/09/12 16:52:02, PaymentType=aio, TotalAmount=20000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:8080/api/ecpay/paymentResult?MerchantTradeNo=202409122342bfc3e640&MerchantTradeDate=2024/09/12 16:52:02&formid=20240912-2342, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:52:47.698+08:00  INFO 40852 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 40852 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:52:47.700+08:00  INFO 40852 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:52:48.161+08:00  INFO 40852 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:52:48.213+08:00  INFO 40852 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:52:48.751+08:00  INFO 40852 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:52:48.764+08:00  INFO 40852 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:52:48.764+08:00  INFO 40852 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:52:48.819+08:00  INFO 40852 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:52:48.819+08:00  INFO 40852 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1086 ms
+2024-09-12T16:52:48.932+08:00  INFO 40852 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:52:49.055+08:00  INFO 40852 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@67e0ff3a
+2024-09-12T16:52:49.058+08:00  INFO 40852 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:52:49.092+08:00  INFO 40852 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:52:49.138+08:00  INFO 40852 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:52:49.166+08:00  INFO 40852 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:52:49.384+08:00  INFO 40852 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:52:49.423+08:00  WARN 40852 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:52:50.031+08:00  INFO 40852 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:52:50.071+08:00  INFO 40852 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:52:50.447+08:00  WARN 40852 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:52:50.872+08:00  INFO 40852 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:52:50.887+08:00  INFO 40852 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:52:50.899+08:00  INFO 40852 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.503 seconds (process running for 3.772)
+2024-09-12T16:52:51.429+08:00  INFO 40852 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:52:51.430+08:00  INFO 40852 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:52:51.431+08:00  INFO 40852 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:53:21.049+08:00  INFO 40852 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=2024091285321c3946be, StoreID=, MerchantTradeDate=2024/09/12 16:53:21, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:8080/paymentResult?MerchantTradeNo=2024091285321c3946be&MerchantTradeDate=2024/09/12 16:53:21&formid=20240912-8532, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:53:39.776+08:00  INFO 40948 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 40948 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:53:39.779+08:00  INFO 40948 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:53:40.270+08:00  INFO 40948 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:53:40.324+08:00  INFO 40948 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:53:40.878+08:00  INFO 40948 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:53:40.890+08:00  INFO 40948 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:53:40.891+08:00  INFO 40948 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:53:40.946+08:00  INFO 40948 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:53:40.947+08:00  INFO 40948 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1128 ms
+2024-09-12T16:53:41.066+08:00  INFO 40948 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:53:41.179+08:00  INFO 40948 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@45843650
+2024-09-12T16:53:41.181+08:00  INFO 40948 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:53:41.224+08:00  INFO 40948 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:53:41.272+08:00  INFO 40948 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:53:41.298+08:00  INFO 40948 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:53:41.534+08:00  INFO 40948 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:53:41.572+08:00  WARN 40948 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:53:42.214+08:00  INFO 40948 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:53:42.256+08:00  INFO 40948 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:53:42.722+08:00  WARN 40948 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:53:43.189+08:00  INFO 40948 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:53:43.202+08:00  INFO 40948 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:53:43.213+08:00  INFO 40948 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.75 seconds (process running for 4.017)
+2024-09-12T16:53:46.611+08:00  INFO 40948 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:53:46.612+08:00  INFO 40948 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:53:46.613+08:00  INFO 40948 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-12T16:53:52.275+08:00  INFO 40948 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-3] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=202409128532504a3e38, StoreID=, MerchantTradeDate=2024/09/12 16:53:52, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:8080/api/ecpay/paymentResult?MerchantTradeNo=202409128532504a3e38&MerchantTradeDate=2024/09/12 16:53:52&formid=20240912-8532, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T16:59:11.412+08:00  INFO 28296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 28296 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T16:59:11.414+08:00  INFO 28296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T16:59:11.878+08:00  INFO 28296 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T16:59:11.930+08:00  INFO 28296 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 4 JPA repository interfaces.
+2024-09-12T16:59:12.506+08:00  INFO 28296 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T16:59:12.527+08:00  INFO 28296 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T16:59:12.528+08:00  INFO 28296 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T16:59:12.587+08:00  INFO 28296 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T16:59:12.588+08:00  INFO 28296 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1141 ms
+2024-09-12T16:59:12.708+08:00  INFO 28296 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T16:59:12.833+08:00  INFO 28296 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@52c9d3d0
+2024-09-12T16:59:12.835+08:00  INFO 28296 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T16:59:12.875+08:00  INFO 28296 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T16:59:12.921+08:00  INFO 28296 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T16:59:12.950+08:00  INFO 28296 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T16:59:13.194+08:00  INFO 28296 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T16:59:13.233+08:00  WARN 28296 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T16:59:13.897+08:00  INFO 28296 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T16:59:13.937+08:00  INFO 28296 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T16:59:14.351+08:00  WARN 28296 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T16:59:14.811+08:00  INFO 28296 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T16:59:14.823+08:00  INFO 28296 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T16:59:14.834+08:00  INFO 28296 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.707 seconds (process running for 3.955)
+2024-09-12T16:59:21.142+08:00  INFO 28296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-12T16:59:21.142+08:00  INFO 28296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-12T16:59:21.143+08:00  INFO 28296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-12T16:59:39.660+08:00  INFO 28296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-6] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912330d1f2ede3b, StoreID=, MerchantTradeDate=2024/09/12 16:59:39, PaymentType=aio, TotalAmount=9000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:8080/api/ecpay/paymentResult?MerchantTradeNo=20240912330d1f2ede3b&MerchantTradeDate=2024/09/12 16:59:39&formid=20240912-330d, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T17:02:38.103+08:00  INFO 28296 --- [RentCarSpb] [https-jsse-nio-0.0.0.0-8080-exec-9] ecpay.payment.integration.AllInOne       : aioCheckOutALL params: AioCheckOutALL [MerchantID=3002607, MerchantTradeNo=20240912098a1a4c5ba6, StoreID=, MerchantTradeDate=2024/09/12 17:02:38, PaymentType=aio, TotalAmount=6000, TradeDesc=GoRent Payment, ItemName=GoRent 租車服務, ReturnURL=https://tongbro.ddns.net:443/, ChoosePayment=ALL, ClientBackURL=, ItemURL=, Remark=, ChooseSubPayment=, OrderResultURL=https://tongbro.ddns.net:8080/api/ecpay/paymentResult?MerchantTradeNo=20240912098a1a4c5ba6&MerchantTradeDate=2024/09/12 17:02:38&formid=20240912-098a, NeedExtraPaidInfo=, DeviceSource=, IgnorePayment=, PlatformID=, InvoiceMark=N, CustomField1=, CustomField2=, CustomField3=, CustomField4=, EncryptType=1, ExpireDate=, PaymentInfoURL=, ClientRedirectURL=, StoreExpireDate=, Desc_1=, Desc_2=, Desc_3=, Desc_4=, Language=, BidingCard=, MerchantMemberID=, Redeem=, UnionPay=, CreditInstallment=, InstallmentAmount=, PeriodAmount=, PeriodType=, Frequency=, ExecTimes=, PeriodReturnURL=]
+2024-09-12T17:06:04.970+08:00  INFO 12324 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Starting RentCarSpbApplication using Java 17.0.11 with PID 12324 (D:\TeamProject\rentproject_spb\RentCarSpb\target\classes started by Administrator in D:\TeamProject\rentproject_spb)
+2024-09-12T17:06:04.972+08:00  INFO 12324 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-09-12T17:06:05.456+08:00  INFO 12324 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T17:06:05.508+08:00  INFO 12324 --- [RentCarSpb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2024-09-12T17:06:06.049+08:00  INFO 12324 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (https)
+2024-09-12T17:06:06.063+08:00  INFO 12324 --- [RentCarSpb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T17:06:06.064+08:00  INFO 12324 --- [RentCarSpb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-12T17:06:06.124+08:00  INFO 12324 --- [RentCarSpb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T17:06:06.125+08:00  INFO 12324 --- [RentCarSpb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2024-09-12T17:06:06.244+08:00  INFO 12324 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T17:06:06.373+08:00  INFO 12324 --- [RentCarSpb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@33feda48
+2024-09-12T17:06:06.374+08:00  INFO 12324 --- [RentCarSpb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T17:06:06.418+08:00  INFO 12324 --- [RentCarSpb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T17:06:06.467+08:00  INFO 12324 --- [RentCarSpb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T17:06:06.494+08:00  INFO 12324 --- [RentCarSpb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T17:06:06.713+08:00  INFO 12324 --- [RentCarSpb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T17:06:06.753+08:00  WARN 12324 --- [RentCarSpb] [main] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-12T17:06:07.366+08:00  INFO 12324 --- [RentCarSpb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T17:06:07.408+08:00  INFO 12324 --- [RentCarSpb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T17:06:07.818+08:00  WARN 12324 --- [RentCarSpb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T17:06:08.292+08:00  INFO 12324 --- [RentCarSpb] [main] o.a.t.util.net.NioEndpoint.certificate   : Connector [https-jsse-nio-0.0.0.0-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from keystore [C:\Users\Administrator\.keystore] using alias [rentalias] with trust store [null]
+2024-09-12T17:06:08.308+08:00  INFO 12324 --- [RentCarSpb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (https) with context path '/'
+2024-09-12T17:06:08.319+08:00  INFO 12324 --- [RentCarSpb] [main] c.e.RentCarSpb.RentCarSpbApplication     : Started RentCarSpbApplication in 3.655 seconds (process running for 3.905)
