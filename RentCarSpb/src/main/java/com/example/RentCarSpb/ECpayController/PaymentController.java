@@ -42,7 +42,7 @@ public class PaymentController {
         obj.setTradeDesc("GoRent Payment");
         obj.setItemName("GoRent 租車服務");
         obj.setReturnURL("http://localhost:3000/"); // 確保這裡是正確的回調 URL
-        obj.setOrderResultURL("http://localhost:3000/paymentResult?MerchantTradeNo=" + tradeNo + "&MerchantTradeDate=" + currentDateTime + "&formid=" + formid); // 包含 formid
+        obj.setOrderResultURL("http://localhost:3000/api/ecpay/paymentResult?MerchantTradeNo=" + tradeNo + "&MerchantTradeDate=" + currentDateTime + "&formid=" + formid); // 包含 formid
 
         String form = "";
         try {
