@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<!-- Maven POM 文件的模型版本 -->
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- 父項目配置，使用 Spring Boot 的啟動器父項目 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- 查找父項目 -->
 	</parent>
+
+	<!-- 當前項目的基本信息 -->
 	<groupId>com.example</groupId>
 	<artifactId>RentCarSpb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -26,42 +31,72 @@
 		<tag/>
 		<url/>
 	</scm>
+
+	<!-- 項目屬性，指定使用的 Java 版本 -->
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<!-- 項目的依賴管理 -->
 	<dependencies>
+		<!-- Spring Boot 的 JPA 啟動器，提供與數據庫交互的功能 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
+		<!-- Spring Boot 的安全啟動器，提供安全相關的功能 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
+		<!-- Spring Boot 的 Web 啟動器，提供 Web 應用的功能 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- MariaDB 的 JDBC 驅動，提供連接 MariaDB 數據庫的功能 -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Spring Boot 的測試啟動器，提供測試相關的功能 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- Spring Security 的測試依賴，提供安全測試相關的功能 -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- JWT 的 Java 庫，用於生成和驗證 JSON Web Token -->
+		<dependency>
+    		<groupId>io.jsonwebtoken</groupId>
+    		<artifactId>jjwt</artifactId>
+    		<version>0.9.1</version>
+		</dependency>
+
+		<!-- JAXB API，用於處理 XML 與 Java 對象之間的轉換 -->
+		<dependency>
+   	 		<groupId>javax.xml.bind</groupId>
+    		<artifactId>jaxb-api</artifactId>
+    		<version>2.3.1</version>
+		</dependency>
 	</dependencies>
 
+	<!-- 构建插件 -->
 	<build>
 		<plugins>
+			<!-- Spring Boot Maven 插件，用於創建 Spring Boot 應用程序的可執行 JAR 文件 -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

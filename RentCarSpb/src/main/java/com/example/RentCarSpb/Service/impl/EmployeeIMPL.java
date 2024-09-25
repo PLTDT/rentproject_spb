@@ -1,81 +1,80 @@
 package com.example.RentCarSpb.Service.impl;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
+import com.example.RentCarSpb.Dto.EmployeeDTO;
 import com.example.RentCarSpb.Service.EmployeeService;
 import com.example.RentCarSpb.response.LoginResponse;
-import com.example.RentCarSpb.Dto.EmployeeDTO;
+import com.example.RentCarSpb.Dto.EmployeeResponseWebDTO;
 import com.example.RentCarSpb.Dto.LoginDTO;
 import com.example.RentCarSpb.Entity.Employee;
 import com.example.RentCarSpb.Repo.EmployeeRepo;
+import com.example.RentCarSpb.util.JwtTokenUtil;
 
-// 標註這個類為 Spring 的服務組件
-@Service
+import java.util.Optional;
+
+@Service // 標記該類別為 Spring 服務類別，以便自動掃描和注入
 public class EmployeeIMPL implements EmployeeService { 
     
-    // 注入 EmployeeRepo，用於與數據庫進行交互
     @Autowired
-    private EmployeeRepo employeeRepo;
+    private EmployeeRepo employeeRepo; // 自動注入 EmployeeRepo，與資料庫進行交互
 
-    // 注入 PasswordEncoder，用於密碼加密和驗證
     @Autowired
-    private PasswordEncoder passwordEncode;
+    private PasswordEncoder passwordEncode; // 自動注入 PasswordEncoder，用於密碼編碼和解碼
 
-    // 實現添加員工的方法
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil; // 自動注入 JwtTokenUtil，用於生成和驗證 JWT
+
     @Override
     public String addEmployee(EmployeeDTO employeeDTO) {
-
-        // 創建 Employee 實體，將密碼進行加密處理
+        // 創建 Employee 實體，並對密碼進行編碼
         Employee employee = new Employee(
                 employeeDTO.getEmployeeid(),
                 employeeDTO.getEmployeename(),
                 employeeDTO.getEmail(),
                 this.passwordEncode.encode(employeeDTO.getPassword())
         );
-
-        // 保存員工實體到數據庫
+        // 保存員工資料到資料庫
         employeeRepo.save(employee);
-
-        // 返回員工姓名
-        return employee.getEmployeename();
+        return employee.getEmployeename(); // 返回員工姓名
     }
 
-    // 實現登錄員工的方法
     @Override
     public LoginResponse loginEmployee(LoginDTO loginDTO) {
-        String msg = "";
-        // 根據電子郵件查找員工
-        Employee employee1 = employeeRepo.findByEmail(loginDTO.getEmail());
+        // 根據 email 查找員工
+        Optional<Employee> optionalEmployee = employeeRepo.findByEmail(loginDTO.getEmail());
         
-        if (employee1 != null) {
-            // 比對密碼是否匹配
-            String password = loginDTO.getPassword();
-            String encodedPassword = employee1.getPassword();
-            Boolean isPwdRight = passwordEncode.matches(password, encodedPassword);
+        if (optionalEmployee.isPresent()) {
+            Employee employee1 = optionalEmployee.get(); // 取出員工實體
+            String password = loginDTO.getPassword(); // 獲取輸入的密碼
+            String encodedPassword = employee1.getPassword(); // 獲取資料庫中的編碼密碼
+            Boolean isPwdRight = passwordEncode.matches(password, encodedPassword); // 檢查密碼是否匹配
             
             if (isPwdRight) {
-                // 如果密碼匹配，根據電子郵件和密碼查找員工
-                Optional<Employee> employee = employeeRepo.findByEmailAndPassword(loginDTO.getEmail(), encodedPassword);
-                
-                if (employee.isPresent()) {
-                    // 返回登錄成功的響應
-                    return new LoginResponse("Login Success", true);
-                } else {
-                    // 如果找不到匹配的員工，返回登錄失敗的響應
-                    return new LoginResponse("Login Failed", false);
-                }
+                // 密碼匹配，生成 JWT token
+                String token = jwtTokenUtil.generateToken(employee1);
+
+                // 創建回應 DTO，並返回成功的 LoginResponse
+                EmployeeResponseWebDTO responseDTO = new EmployeeResponseWebDTO(
+                    employee1.getEmployeeid(),
+                    employee1.getEmployeename(),
+                    employee1.getEmail()
+                );
+                return new LoginResponse("Login Success", true, responseDTO, token);
             } else {
-                // 密碼不匹配，返回登錄不匹配的響應
+                // 密碼不匹配，返回失敗的 LoginResponse
                 return new LoginResponse("Login Not Match", false);
             }
         } else {
-            // 如果電子郵件找不到對應的員工，返回電子郵件不存在的響應
-            return new LoginResponse("Email not exits", false);
+            // email 不存在，返回失敗的 LoginResponse
+            return new LoginResponse("Email not exists", false);
         }
     }
-}
 
+    @Override
+    public boolean checkEmailExists(String email) {
+        // 檢查電子郵件是否存在於資料庫中
+        return employeeRepo.existsByEmail(email);
+    }
+}

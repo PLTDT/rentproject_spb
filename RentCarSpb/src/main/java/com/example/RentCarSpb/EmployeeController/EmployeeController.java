@@ -4,9 +4,11 @@ package com.example.RentCarSpb.EmployeeController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.RentCarSpb.Dto.EmployeeDTO;
@@ -14,33 +16,41 @@ import com.example.RentCarSpb.Dto.LoginDTO;
 import com.example.RentCarSpb.Service.EmployeeService;
 import com.example.RentCarSpb.response.LoginResponse;
 
-// 標註這個類為 REST 控制器，並指定處理 HTTP 請求
-@RestController
-// 允許來自不同來源的請求
-@CrossOrigin
-// 指定這個控制器的請求路徑前綴
-@RequestMapping("api/v1/employee")
-public class EmployeeController {
-    
-    // 注入 EmployeeService 服務，用於處理業務邏輯
-    @Autowired
-    private EmployeeService employeeService;
+import java.util.HashMap;
+import java.util.Map;
 
-    // 處理 POST 請求，路徑為 /registeraction，用於註冊新員工
+@RestController
+@CrossOrigin // 允許來自不同來源的請求，通常用於處理跨域請求
+@RequestMapping("api/v1/employee") // 設定該控制器的基礎 URL 路徑
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeService employeeService; // 自動注入 EmployeeService 服務
+
+    // 註冊新員工
     @PostMapping(path = "/registeraction")
     public String saveEmployee(@RequestBody EmployeeDTO employeeDTO) {
-        // 調用服務層的方法來添加員工，並返回生成的員工 ID
+        // 使用 EmployeeService 服務來添加員工，並返回員工的 ID
         String id = employeeService.addEmployee(employeeDTO);
-        return id;
+        return id; // 返回新增員工的 ID
     }
 
-    // 處理 POST 請求，路徑為 /loginaction，用於用戶登錄
+    // 員工登入
     @PostMapping(path = "/loginaction")
     public ResponseEntity<?> loginEmployee(@RequestBody LoginDTO loginDTO) {
-        // 調用服務層的方法來進行登錄，並返回登錄響應
+        // 使用 EmployeeService 服務來處理登入邏輯，並返回登入結果
         LoginResponse loginResponse = employeeService.loginEmployee(loginDTO);
-        return ResponseEntity.ok(loginResponse);
+        return ResponseEntity.ok(loginResponse); // 返回登入結果
+    }
+
+    // 檢查 email 是否已存在
+    @GetMapping(path = "/check-email")
+    public ResponseEntity<Map<String, Boolean>> checkEmailExists(@RequestParam String email) {
+        // 使用 EmployeeService 服務來檢查 email 是否存在
+        boolean exists = employeeService.checkEmailExists(email);
+        // 構建返回的 Map 以告知 email 是否存在
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("exists", exists);
+        return ResponseEntity.ok(response); // 返回檢查結果
     }
 }
-
-
