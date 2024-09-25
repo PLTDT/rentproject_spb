@@ -6,12 +6,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import jakarta.persistence.GenerationType;
 
 // 標註這個類為 JPA 實體，對應到數據庫中的表
 @Entity
-// 指定這個實體對應的數據庫表名
-@Table(name = "employee")
+// 指定這個實體對應的數據庫表名及唯一約束
+@Table(name = "employee", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class Employee {
     
     // 標註這個屬性為主鍵
