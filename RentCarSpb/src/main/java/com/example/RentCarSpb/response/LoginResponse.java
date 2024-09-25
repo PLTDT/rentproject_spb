@@ -1,46 +1,85 @@
 package com.example.RentCarSpb.response;
 
-// 定義一個用於登錄響應的類
-public class LoginResponse {
-    // 響應消息，例如登錄成功或錯誤信息
-    private String message;
-    // 登錄狀態，表示登錄是否成功
-    private Boolean status;
+import com.example.RentCarSpb.Dto.EmployeeResponseWebDTO;
 
-    // 帶參數的構造函數，用於初始化 LoginResponse 物件
+/**
+ * 定義登入回應的 DTO 類，用來封裝登入結果的資訊。
+ */
+public class LoginResponse {
+
+    private String message; // 登入結果的消息
+    private Boolean status; // 登入結果的狀態，成功為 true，失敗為 false
+    private EmployeeResponseWebDTO user; // 登入的使用者資訊
+    private String token; // JWT token，用於後續的身份驗證
+
+    // 帶參數的構造函數，用於初始化 LoginResponse 物件，包含消息、狀態、使用者資訊和 token
+    public LoginResponse(String message, Boolean status, EmployeeResponseWebDTO user, String token) {
+        this.message = message;
+        this.status = status;
+        this.user = user;
+        this.token = token;
+    }
+
+    // 帶參數的構造函數，用於初始化 LoginResponse 物件，包含消息、狀態和使用者資訊
+    public LoginResponse(String message, Boolean status, EmployeeResponseWebDTO user) {
+        this.message = message;
+        this.status = status;
+        this.user = user;
+    }
+
+    // 帶參數的構造函數，用於初始化 LoginResponse 物件，包含消息和狀態
     public LoginResponse(String message, Boolean status) {
         this.message = message;
         this.status = status;
     }
 
-    // 無參數的構造函數，供框架和序列化操作使用
+    // 無參數的構造函數，供序列化和反序列化使用
     public LoginResponse() {
     }
 
-    // 獲取響應消息
+    // 獲取消息
     public String getMessage() {
         return message;
     }
 
-    // 設置響應消息
+    // 設置消息
     public void setMessage(String message) {
         this.message = message;
     }
 
-    // 獲取登錄狀態
+    // 獲取狀態
     public Boolean getStatus() {
         return status;
     }
 
-    // 設置登錄狀態
+    // 設置狀態
     public void setStatus(Boolean status) {
         this.status = status;
     }
 
-    // 覆寫 toString 方法，用於輸出 LoginResponse 物件的字串表示
+    // 獲取使用者資訊
+    public EmployeeResponseWebDTO getUser() {
+        return user;
+    }
+
+    // 設置使用者資訊
+    public void setUser(EmployeeResponseWebDTO user) {
+        this.user = user;
+    }
+
+    // 獲取 JWT token
+    public String getToken() {
+        return token;
+    }
+
+    // 設置 JWT token
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    // 重寫 toString 方法，以便於打印 LoginResponse 物件的內容
     @Override
     public String toString() {
-        return "LoginResponse [message=" + message + ", status=" + status + "]";
+        return "LoginResponse [message=" + message + ", status=" + status + ", user=" + user + ", token=" + token + "]";
     }
 }
-
